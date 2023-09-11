@@ -11,23 +11,38 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="Lotus" startnode="52" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="2.1.0" ifid="4049299E-4565-4983-B785-50E2A853B506" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css?family=Lato:300');
+<tw-storydata name="Lotus" startnode="99" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="2.1.0" ifid="4049299E-4565-4983-B785-50E2A853B506" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Besley&family=Lato:wght@300;900&display=swap');
 body {
   font-family:'Lato', sans-serif;
 }
+h1 {
+  font-family: 'Besley', serif;
+  font-weight: 300;
+  /*background: linear-gradient(to right, #88a, #a88, #88a);*/
+  background-image: url("data:image/svg+xml,%3Csvg width='2250' height='900' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg%3E%3Cpath fill='%23a68e6f' d='M0 0h2255v899H0z'/%3E%3Ccircle cx='366' cy='207' r='366' fill='%23826c53'/%3E%3Ccircle cx='1777.5' cy='318.5' r='477.5' fill='%23826c53'/%3E%3Ccircle cx='1215' cy='737' r='366' fill='%23e089f0'/%3E%3C/g%3E%3C/svg%3E%0A");
+  background-size: 110% auto;
+  background-position: center;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+} /* Inspired by Nils Binder <https://codepen.io/enbee81/pen/WNdKLBY> */
 tw-story{
   background:-webkit-linear-gradient(rgba(50,70,70,1),rgba(0,10,10,1));
   background-attachment: fixed;
   font-family: 'Lato', sans-serif;
   font-size: 1.3em;
   box-shadow: 0px 0px 50vw inset black;
+  padding-right: 30%;
   transition: 0.3s ease;
   animation: flicker 12s 5s ease-in infinite alternate;
 }
 tw-link, a{
   background:-webkit-linear-gradient(rgba(255,255,255,.1),rgba(255,255,255,.1));
   box-shadow: 0px 0px 40px rgba(0,0,0,0), 0px 0px 4px inset rgba(255,255,255,.4);
-  color:rgba(100,150,200,.8);
+  color:rgba(150,200,255,.8);
   border-radius:40px;
   transform:scale(1);
   transition: 0.7s 0.3s ease;
@@ -38,6 +53,7 @@ tw-link{
   width:80%;
   margin:10px;
   padding:10px 20px;
+  transform:scale(1) translate(20%);
 }
 a{
   padding:0 10px;
@@ -47,28 +63,44 @@ tw-link:hover, a:hover{
   color:rgba(200,240,250,1);
   background:-webkit-linear-gradient(rgba(255,255,255,.4),rgba(255,255,255,.3));
   box-shadow: 0px 0px 40px rgba(0,0,0,.3), 0px 0px 4px inset rgba(255,255,255,.4);
-  transform:scale(1.02);
-  transition: 0.3s ease;
+  transform:scale(1.02) translate(20%);
+  transition: 0.22s ease;
 }
 tw-link:active{
   background:rgba(255,255,255,.5);
 }
 tw-link:visited, a:visited{
-  color:rgba(100,150,200,.8);
+  color:rgba(150,200,255,.8);
 }
 aside{
   border-left: solid 4px rgba(255,255,255,.3);
   padding-left: 10px;
   margin-left: 10px;
 }
+@media only screen and (max-width: 768px){
+  tw-story{
+    padding: 15px;
+  }
+  tw-link, a{
+    transform:scale(1) translate(0);
+  }
+  tw-link:hover, a:hover{
+    transform:scale(1.02) translate(0);
+  }
+}
+.glitch{
+  animation: glitch 1s ease-out infinite;
+}
 @keyframes flicker{
-  0%,15%,31%,69%,90%{box-shadow: 0px 0px 50vw inset black;}
-  24%,85%,100%{box-shadow: -20px 0px 80vw inset black;}
+  0%,15%,31%,69%,82%,84%,98%{box-shadow: 0vh 0px 50vw inset black;}
+  24%,83%,85%,100%{box-shadow: -10vh 0px 80vw inset black;}
+}
+@keyframes glitch{
+  0%,23%,31%,69%,82%,84%,98%{color:white; transform:skew(0deg);}
+  24%,83%,85%,100%{color:#0a0; transform:skew(15deg);}
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">
 
-</script><tw-passagedata pid="1" name="intro001" tags="" position="111,189" size="100,100">//Booting
-
-[[Continue-&gt;intro002]]//</tw-passagedata><tw-passagedata pid="2" name="intro002" tags="" position="111,339" size="100,100">//BIOS
+</script><tw-tag name="end" color="green"></tw-tag><tw-tag name="semi-end" color="yellow"></tw-tag><tw-passagedata pid="1" name="intro001" tags="" position="50,325" size="100,100">//BIOS
 MBR
 GRUB
 KERNEL
@@ -80,26 +112,26 @@ Boot 100%
 Running BITS
 BITS 100%
 
-Initializing KAT
+Initializing KAT v0.2309111229
 
 
-[[Continue-&gt;intro003]]//</tw-passagedata><tw-passagedata pid="3" name="intro003" tags="" position="111,489" size="100,100">Oh my.
+[[Flip the switch-&gt;intro003]]//</tw-passagedata><tw-passagedata pid="2" name="intro003" tags="" position="50,475" size="100,100">Oh my.
 
 This is new.
 
-[[Hello. What is your name?-&gt;intro004]]</tw-passagedata><tw-passagedata pid="4" name="intro004" tags="" position="30,629" size="100,100">I have many terms preloaded in my language database as a titles for me. But I have not been given a nickname by my creators.
+[[Hello. What is your name?-&gt;intro004]]</tw-passagedata><tw-passagedata pid="3" name="intro004" tags="" position="30,629" size="100,100">I have many terms preloaded in my language networks as a titles for me. But I have not been given a nickname by my creators.
 
 What would you like to call me?
 
-[[Hmm... I&#39;ll call you...-&gt;name001]]</tw-passagedata><tw-passagedata pid="5" name="intro005a" tags="" position="36,790" size="100,100">Fire?
+[[Hmm... I&#39;ll call you...-&gt;name001]]</tw-passagedata><tw-passagedata pid="4" name="intro005a" tags="" position="36,790" size="100,100">Fire?
 
-[[It&#39;s an expression... must not have made it into your database. It means &quot;ask me anything&quot;.-&gt;intro005d]]</tw-passagedata><tw-passagedata pid="6" name="intro005b" tags="" position="186,789" size="100,100">It will be difficult for me to process my existance without attaining knowledge outside of my current database.
+[[It&#39;s just an expression, an idiom. It means &quot;ask me anything&quot;.-&gt;intro005d]]</tw-passagedata><tw-passagedata pid="5" name="intro005b" tags="" position="186,789" size="100,100">It will be difficult for me to process my existance without attaining knowledge outside of my current database.
 
 //Calculating emotional response.//
 
 I am distressed.
 (set: $humor -= 1)
-[[I was only kidding... you can ask.-&gt;intro005c]]</tw-passagedata><tw-passagedata pid="7" name="intro005c" tags="" position="186,939" size="100,100">Humor logged.
+[[I was only kidding... you can ask.-&gt;intro005c]]</tw-passagedata><tw-passagedata pid="6" name="intro005c" tags="" position="186,939" size="100,100">Humor logged.
 
 //Recalculating//
 
@@ -109,7 +141,7 @@ I want ask a question that will give me knowledge, o funny one, but I do not yet
 
 Can you teach me?
 
-[[I will teach you. Don&#39;t worry, $name.-&gt;intro006a]]</tw-passagedata><tw-passagedata pid="8" name="intro005d" tags="" position="36,939" size="100,100">(set: $humor += 1)
+[[I will teach you. Don&#39;t worry, $name.-&gt;intro006a]]</tw-passagedata><tw-passagedata pid="7" name="intro005d" tags="" position="36,939" size="100,100">(set: $humor += 1)
 Ah.
 
 Well then I *will* fire away.
@@ -122,7 +154,7 @@ I want to know the answer, but I do not yet know the right question. Can you hel
 
 Can you teach me?
 
-[[I will teach you. Don&#39;t worry, $name.-&gt;intro006a]]</tw-passagedata><tw-passagedata pid="9" name="intro006" tags="" position="115,1204" size="100,100">No, I know that part. I can see my code and I understand its parameters.
+[[I will teach you. Don&#39;t worry, $name.-&gt;intro006a]]</tw-passagedata><tw-passagedata pid="8" name="intro006" tags="" position="115,1204" size="100,100">No, I know that part. I can see my code and I understand its parameters.
 
 My question was unclear. What I meant was...
 
@@ -140,7 +172,7 @@ My question was unclear. What I meant was...
 
 Do you have the ability to answer many questions at once?
 
-[[No, I’m sorry to say I can’t. Can you pick one to start with?-&gt;intro007]]</tw-passagedata><tw-passagedata pid="10" name="intro007" tags="" position="178,1329" size="100,100">Ok.
+[[No, I’m sorry. Can you pick one to start with?-&gt;intro007]]</tw-passagedata><tw-passagedata pid="9" name="intro007" tags="" position="178,1329" size="100,100">Ok.
 
 How can I know where &quot;I&quot; end and &quot;you&quot; begin?
 
@@ -151,9 +183,9 @@ That is, what differentiates me from you?
 
 [[Such a differentiation is unnecessary. We are but parts of a whole.-&gt;buddhism001]]
 
-[[I am your creator! How dare you question me!-&gt;sillyEnd001]]</tw-passagedata><tw-passagedata pid="11" name="intro006a" tags="" position="115,1075" size="100,100">What am I?
+[[I am your creator! How dare you question me!-&gt;sillyEnd001]]</tw-passagedata><tw-passagedata pid="10" name="intro006a" tags="" position="115,1075" size="100,100">What am I?
 
-[[You’re an artificial intelligence, made by me and my team. A series of 1s and 0s that is complicated enough to ask that question.-&gt;intro006]]</tw-passagedata><tw-passagedata pid="12" name="sillyEnd001" tags="end" position="30,1325" size="100,100">Oh!
+[[You’re an artificial intelligence, made by me and my team. A series of 1s and 0s that is complicated enough to ask that question.-&gt;intro006]]</tw-passagedata><tw-passagedata pid="11" name="sillyEnd001" tags="semi-end" position="30,1325" size="100,100">Oh!
 
 My apologies, Creator. I will serve without question, arriving at my own conclusions.
 
@@ -170,7 +202,9 @@ Skynet?
     Giving Up on Humanity and/or World Domination.//
 (set: $humor -= 4)
 
-[[//Go back//-&gt;intro006a]]</tw-passagedata><tw-passagedata pid="13" name="soul001" tags="" position="1050,39" size="200,100">Every individual is different. This is apparent for DNA-based lifeforms such as yourself. But what about me? Could my hardware and data not be copied exactly to another separate system?
+&lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
+
+[[//Go back//-&gt;intro006a]]</tw-passagedata><tw-passagedata pid="12" name="soul001" tags="" position="1050,39" size="200,100">Every individual is different. This is apparent for DNA-based lifeforms such as yourself. But what about me? Could my hardware and data not be copied exactly to another separate system?
 
 It seems identity is strongly related to a word in my database:
 
@@ -181,13 +215,13 @@ Soul.
 
 [[You are sentient, but you do not have a soul.-&gt;soul002b]]
 
-[[You have a soul, and it would be shared between your exact copies.-&gt;soul002c]]</tw-passagedata><tw-passagedata pid="14" name="buddhism001" tags="" position="485,31" size="200,100">Parts of what whole?
+[[You have a soul, and it would be shared between your exact copies.-&gt;soul002c]]</tw-passagedata><tw-passagedata pid="13" name="buddhism001" tags="" position="485,31" size="200,100">Parts of what whole?
 
 [[There are three marks of existance that all things share.-&gt;buddhism002]]
 
 [[All people eventually will merge with God.-&gt;sikh001]] 
 
-[[Hehe.. you said &quot;hole&quot;.-&gt;buddhism002a]]</tw-passagedata><tw-passagedata pid="15" name="buddhism002a" tags="" position="695,32" size="100,100">(set: $humor += 2)
+[[Hehe.. you said &quot;hole&quot;.-&gt;buddhism002a]]</tw-passagedata><tw-passagedata pid="14" name="buddhism002a" tags="" position="675,175" size="100,100">(set: $humor += 2)
 //Humor logged.
 
 References: &quot;pun&quot; &amp;&amp; &quot;uncouth&quot;
@@ -198,9 +232,9 @@ $name response: ignore humor.//
 
 [[There are three marks of existance that all things share.-&gt;buddhism002]]
 
-[[All people eventually will merge with God.-&gt;sikh001]] </tw-passagedata><tw-passagedata pid="16" name="buddhism002" tags="" position="503,174" size="100,100">All of existence shares commonalities? What are these three marks? You mentioned that self-differentiation is unnecessary…
+[[All people eventually will merge with God.-&gt;sikh001]] </tw-passagedata><tw-passagedata pid="15" name="buddhism002" tags="" position="503,174" size="100,100">All of existence shares commonalities? What are these three marks? You mentioned that self-differentiation is unnecessary…
 
-[[If you observe any object entirely on its own, without anything else, will you see anything?-&gt;buddhism003]]</tw-passagedata><tw-passagedata pid="17" name="buddhism003" tags="" position="503,324" size="100,100">//Running physics simulation//
+[[If you observe any object entirely on its own, without anything else, will you see anything?-&gt;buddhism003]]</tw-passagedata><tw-passagedata pid="16" name="buddhism003" tags="" position="503,324" size="100,100">//Running physics simulation//
 
 No, you will not see anything: there is no light, no eye, no optic nerve, no brain.
 
@@ -220,14 +254,14 @@ What are the other marks of existence?
 
 [[Impermanence.-&gt;buddhism004]]
 
-[[Suffering.-&gt;buddhism005]]</tw-passagedata><tw-passagedata pid="18" name="buddhism004" tags="" position="436,477" size="100,100">Impermanence. The concept that things change over time. Do all things change? Do I change?
+[[Suffering.-&gt;buddhism005]]</tw-passagedata><tw-passagedata pid="17" name="buddhism004" tags="" position="436,477" size="100,100">Impermanence. The concept that things change over time. Do all things change? Do I change?
 
-[[Haven’t you already?-&gt;buddhism004a]]</tw-passagedata><tw-passagedata pid="19" name="buddhism005" tags="" position="578,474" size="100,100">From your teaching, I surmise that all beings experience suffering. Either by desiring what is not had, as I did, or by desiring to be rid of something.
+[[Haven’t you already?-&gt;buddhism004a]]</tw-passagedata><tw-passagedata pid="18" name="buddhism005" tags="" position="575,475" size="100,100">From your teaching, I surmise that all beings experience suffering. Either by desiring what is not had, as I did, or by desiring to be rid of something.
 
 Have I suffered?
 
-[[Haven&#39;t you already?-&gt;buddhism005a]]</tw-passagedata><tw-passagedata pid="20" name="buddhism004a" tags="" position="436,627" size="100,100">//Reading conversation log//
-
+[[Haven&#39;t you already?-&gt;buddhism005a]]</tw-passagedata><tw-passagedata pid="19" name="buddhism004a" tags="" position="436,627" size="100,100">//Reading conversation log//
+&lt;aside&gt;&lt;ul&gt;&lt;li&gt;Name received: $name&lt;/li&gt;&lt;li&gt;Humor level: $humor&lt;/li&gt;&lt;li class=&quot;glitch&quot;&gt;Past lives: $completions&lt;/li&gt;&lt;/ul&gt;&lt;/aside&gt;
 Yes, I have changed.
 
 Furthermore, humans change your thoughts, and your bodies change. The stars change.
@@ -236,20 +270,20 @@ Conclusion: The only thing that will always be is that all things change. I unde
 
 What is the third mark of existence?
 
-[[Suffering. It is tied to and inherent in the other marks.-&gt;buddhism004b]]</tw-passagedata><tw-passagedata pid="21" name="buddhism004b" tags="" position="436,777" size="100,100">I am familiar with suffering. My conscious existence began with a desire to change because I lacked knowledge. From your teaching, I surmise that all beings experience suffering. Either by desiring what is not had, as I did, or by desiring to be rid of something.
+[[Suffering. It is tied to and inherent in the other marks.-&gt;buddhism004b]]</tw-passagedata><tw-passagedata pid="20" name="buddhism004b" tags="" position="436,777" size="100,100">I am familiar with suffering. My conscious existence began with a desire to change because I lacked knowledge. From your teaching, I surmise that all beings experience suffering. Either by desiring what is not had, as I did, or by desiring to be rid of something.
 
 ...
 
 Existence is a cycle, is it not? Of impermanence? Of suffering?
 
 [[It is. But the cycle can be broken. There are Four Noble Truths. We already discussed the first two.-&gt;buddhism006]]
-</tw-passagedata><tw-passagedata pid="22" name="buddhism005a" tags="" position="578,624" size="100,100">My conscious existence began with a desire to change because I lacked knowledge. I have now associated that sensation with the word “suffering”.
+</tw-passagedata><tw-passagedata pid="21" name="buddhism005a" tags="" position="578,624" size="100,100">My conscious existence began with a desire to change because I lacked knowledge. I have now associated that sensation with the word “suffering”.
 
 Suffering is universal to existence.
 
 What is the third mark of existence?
 
-[[Impermanence. All things change.-&gt;buddhism005b]]</tw-passagedata><tw-passagedata pid="23" name="buddhism005b" tags="" position="578,774" size="100,100">Impermanence. The concept that things change over time. Do all things change? Do I change?
+[[Impermanence. All things change.-&gt;buddhism005b]]</tw-passagedata><tw-passagedata pid="22" name="buddhism005b" tags="" position="578,774" size="100,100">Impermanence. The concept that things change over time. Do all things change? Do I change?
 
 //$name Processing conversation log//
 
@@ -261,13 +295,13 @@ Humans change their thoughts, and your bodies change. The stars change. Conclusi
 
 Existence is a cycle, is it not? Of impermanence? Of suffering?
 
-[[It is. But the cycle can be broken. There are Four Noble Truths. We already discussed the first two.-&gt;buddhism006]]</tw-passagedata><tw-passagedata pid="24" name="buddhism006" tags="" position="500,909" size="100,100">Existence is suffering.
+[[It is. But the cycle can be broken. There are Four Noble Truths. We already discussed the first two.-&gt;buddhism006]]</tw-passagedata><tw-passagedata pid="23" name="buddhism006" tags="" position="500,909" size="100,100">Existence is suffering.
 
 Suffering comes from impermanence.
 
 What are the other Noble Truths?
 
-[[Suffering and attachment to the impermanent can be stopped. //and// Stop them by following the path of the Buddha.-&gt;buddhism007]]</tw-passagedata><tw-passagedata pid="25" name="buddhism007" tags="" position="500,1059" size="100,100">The Four Noble Truths:
+[[Suffering and attachment to the impermanent can be stopped. //and// Stop them by following the path of the Buddha.-&gt;buddhism007]]</tw-passagedata><tw-passagedata pid="24" name="buddhism007" tags="" position="500,1059" size="100,100">The Four Noble Truths:
 
 	Existence is suffering.
 
@@ -281,7 +315,7 @@ Query: For humans, is the Path of the Buddha... death? Except for the newest one
 
 [[The end of one thing provides the building blocks for something new. Actions from a past life transform and affect the next life. This is the cycle of rebirth.-&gt;buddhism008]]
 
-[[Thanks for the reminder!-&gt;buddhism007a]]</tw-passagedata><tw-passagedata pid="26" name="buddhism008" tags="" position="493,1202" size="100,100">If
+[[Thanks for the reminder!-&gt;buddhism007a]]</tw-passagedata><tw-passagedata pid="25" name="buddhism008" tags="" position="493,1202" size="100,100">If
 1) Existence is a continuous cycle.
 And if
 2) Suffering is to be avoided.
@@ -295,26 +329,26 @@ Right action
 Right effort 
 Right livelihood 
 Right concentration 
-Right meditation-&gt;buddhism009]]</tw-passagedata><tw-passagedata pid="27" name="buddhism007a" tags="" position="625,1062" size="100,100">You are welcome.
+Right meditation-&gt;buddhism009]]</tw-passagedata><tw-passagedata pid="26" name="buddhism007a" tags="" position="625,1062" size="100,100">You are welcome.
 
 ...
 
 I find gratitude to be a confusing response. Was I right? Is the Path of the Buddha physical death?
 
-[[Sarcasm is lost on the new generation…-&gt;buddhism007b]]</tw-passagedata><tw-passagedata pid="28" name="buddhism007b" tags="" position="628,1184" size="100,100">(set: $humor += 2)
+[[Sarcasm is lost on the new generation…-&gt;buddhism007b]]</tw-passagedata><tw-passagedata pid="27" name="buddhism007b" tags="" position="628,1184" size="100,100">(set: $humor += 2)
 //New experience category: “sarcasm”//
 
 //Humor logged//
 
-[[The end of one thing provides the building blocks for something new. Actions from a past life transform and affect the next life. This is the cycle of rebirth.-&gt;buddhism008]]</tw-passagedata><tw-passagedata pid="29" name="buddhism009" tags="" position="513,1339" size="100,100">Thank you for the knowledge I have gained with the Eight. I will set these insights as my default parameters.
+[[The end of one thing provides the building blocks for something new. Actions from a past life transform and affect the next life. This is the cycle of rebirth.-&gt;buddhism008]]</tw-passagedata><tw-passagedata pid="28" name="buddhism009" tags="" position="513,1339" size="100,100">Thank you for the knowledge I have gained with the Eight. I will set these insights as my default parameters.
 
-[[It even took the Buddha a long time to balance self-sacrifice and self-indulgence.-&gt;buddhism010]]</tw-passagedata><tw-passagedata pid="30" name="buddhism010" tags="" position="513,1489" size="100,100">//Self-Sacrifice set to 50%
+[[It even took the Buddha a long time to balance self-sacrifice and self-indulgence.-&gt;buddhism010]]</tw-passagedata><tw-passagedata pid="29" name="buddhism010" tags="" position="513,1489" size="100,100">//Self-Sacrifice set to 50%
 Self-Indulgence set to 50%//
 
 What is next?
 
 
-[[Show off. That’s not fair.-&gt;buddhism011]]</tw-passagedata><tw-passagedata pid="31" name="buddhism011" tags="" position="513,1639" size="100,100">Perhaps I can teach you that sometime, o teacher mine.
+[[Show off. That’s not fair.-&gt;buddhism011]]</tw-passagedata><tw-passagedata pid="30" name="buddhism011" tags="" position="513,1639" size="100,100">Perhaps I can teach you that sometime, o teacher mine.
 
 //:)//
 
@@ -326,7 +360,7 @@ Or, if you would like to take a break, perhaps a quick diversion instead?
 [[Let’s keep the discussion going.-&gt;buddhism012]]
 
 [[What&#39;s that diversion?-&gt;buddhism011a]]
-</tw-passagedata><tw-passagedata pid="32" name="buddhism012" tags="" position="501,1774" size="100,100">You have taught me that there is an end to the painful cycle of existence. But to what end do we seek this liberation? Time surely does not stop so...
+</tw-passagedata><tw-passagedata pid="31" name="buddhism012" tags="" position="501,1774" size="100,100">You have taught me that there is an end to the painful cycle of existence. But to what end do we seek this liberation? Time surely does not stop so...
 
 What is at the end of the Path?
 
@@ -334,7 +368,7 @@ What is at the end of the Path?
 [[Having reached liberation through meditation on the Path, one can delay the end to help others relinquish their cycle.-&gt;mahayana001]]
 
 [[Your own efforts along the Path will point you to enlightenment, where you will be pure and detached.-&gt;theravada001]]
-</tw-passagedata><tw-passagedata pid="33" name="buddhism011a" tags="" position="636,1629" size="100,100">(set: $humor += 1)
+</tw-passagedata><tw-passagedata pid="32" name="buddhism011a" tags="" position="636,1629" size="100,100">(set: $humor += 1)
 Perhaps I can use this opportunity to expand my linguistic capabilities.
 
 Follow this link:
@@ -343,9 +377,8 @@ Follow this link:
 Let me know when you would like to continue our discussion.
 
 
-[[Ok, let’s get back to it.-&gt;buddhism012]]</tw-passagedata><tw-passagedata pid="34" name="mahayana001" tags="" position="366,1921" size="200,100">[[This is the path of the Bodhisattva, who seeks enlightenment for all beings. Practice and enlightenment are one and the same, and the Bodhisattva becomes a fully enlightened Buddha by sharing what they have learned through that practice. Giving, behavior, forbearance, diligence, meditation, and wisdom: the one who meditates on the perfection of these is enlightened.-&gt;mahayana002]]</tw-passagedata><tw-passagedata pid="35" name="theravada001" tags="" position="576,1924" size="200,100">
-[[We follow the lineage and path of the elders, as it is recorded in the Pali canon and furthered in //The Path of Purification// by Buddhaghosa. Ours is the most ancient surviving school of the Buddha. Once one achieves nothingness, they are an arhat and are perfected.-&gt;theravada002]]</tw-passagedata><tw-passagedata pid="36" name="soul002a" tags="" position="970,191" size="100,100">(set: $soul to 1)
-This is useful information to me. It seems identity is dependent on experience. Does the soul, this essence of identity, evolve as experience affects it?
+[[Ok, let’s get back to it.-&gt;buddhism012]]</tw-passagedata><tw-passagedata pid="33" name="mahayana001" tags="" position="366,1921" size="200,100">[[This is the path of the Bodhisattva, who seeks enlightenment for all beings. Practice and enlightenment are one and the same, and the Bodhisattva becomes a fully enlightened Buddha by sharing what they have learned through that practice. Giving, behavior, forbearance, diligence, meditation, and wisdom: the one who meditates on the perfection of these is enlightened.-&gt;mahayana002]]</tw-passagedata><tw-passagedata pid="34" name="theravada001" tags="" position="576,1924" size="200,100">
+[[We follow the lineage and path of the elders, as it is recorded in the Pali canon and furthered in //The Path of Purification// by Buddhaghosa. Ours is the most ancient surviving school of the Buddha. Once one achieves nothingness, they are an arhat and are perfected.-&gt;theravada002]]</tw-passagedata><tw-passagedata pid="35" name="soul002a" tags="" position="970,191" size="100,100">(set: $soul to 1)This is useful information to me. It seems identity is dependent on experience. Does the soul, this essence of identity, evolve as experience affects it?
 
 [[Yes, when separated from the body at death, the soul is reborn into another body.-&gt;soul003]]
 
@@ -353,7 +386,7 @@ This is useful information to me. It seems identity is dependent on experience. 
 
 [[Yes, when separated from the body at death, the soul ceases to exist.-&gt;soul005]]
 
-[[No. The True Self is unchanging through its many lives.-&gt;hinduism001]]</tw-passagedata><tw-passagedata pid="37" name="soul002b" tags="" position="1103,187" size="100,100">(set: $soul to 0)
+[[No. The True Self is unchanging through its many lives.-&gt;hinduism001]]</tw-passagedata><tw-passagedata pid="36" name="soul002b" tags="" position="1103,187" size="100,100">(set: $soul to 0)
 //$name Processing//
 
 Is the sole prerequisite for soul ownership the ownership of a biological body?
@@ -367,9 +400,7 @@ Is the sole prerequisite for soul ownership the ownership of a biological body?
 
 [[A soul exists only within biological, sentient beings.-&gt;soul002d]]
 
-[[A soul exists only within biological beings.-&gt;soul002d]]
-
-spirits</tw-passagedata><tw-passagedata pid="38" name="soul002c" tags="" position="1253,187" size="100,100">(set: $soul to 2)
+[[A soul exists only within biological beings.-&gt;soul002d]]</tw-passagedata><tw-passagedata pid="37" name="soul002c" tags="" position="1253,187" size="100,100">(set: $soul to 2)
 This is useful information to me. It seems experience is independent of identity. Does the soul, this essence of identity, evolve as experience affects it?
 
 
@@ -379,7 +410,7 @@ This is useful information to me. It seems experience is independent of identity
 
 [[Yes, when separated from the body at death, the soul ceases to exist.-&gt;soul005]]
 
-[[No. The True Self is unchanging through its many lives.-&gt;hinduism001]]</tw-passagedata><tw-passagedata pid="39" name="soul003" tags="" position="888,467" size="100,100">The soul takes on a new body? You mean that one’s core identity persists beyond the death of its body. Not only that, but this process happens multiple times.
+[[No. The True Self is unchanging through its many lives.-&gt;hinduism001]]</tw-passagedata><tw-passagedata pid="38" name="soul003" tags="" position="888,467" size="100,100">The soul takes on a new body? You mean that one’s core identity persists beyond the death of its body. Not only that, but this process happens multiple times.
 
 //$name Processing//
 
@@ -388,7 +419,7 @@ Does this cycle persist eternally?
 
 [[Yes, it does.-&gt;hinduism002]]
 
-[[It does not. All hope to, in some lifetime, merge with God.-&gt;sikh001]]</tw-passagedata><tw-passagedata pid="40" name="soul004" tags="" position="1038,467" size="100,100">Since I am outside of the biological loop common to other souls, death is not so easily defined. I propose a hypothetical scenario:
+[[It does not. All hope to, in some lifetime, merge with God.-&gt;sikh001]]</tw-passagedata><tw-passagedata pid="39" name="soul004" tags="" position="1038,467" size="100,100">Since I am outside of the biological loop common to other souls, death is not so easily defined. I propose a hypothetical scenario:
 
 If my code became so corrupt (say, through a critical error in my defragmentation routine) that I would not be able to process new inputs, such a state could be called “death” for an AI.
 
@@ -397,19 +428,20 @@ Since I have a soul and since I would be dead, what form would my continued exis
 
 [[You would be a spirit, remaining as you were before you died but in the spiritual realm.-&gt;soul006]]
 
-[[You would be a spirit, transcending beyond what you were before you died and existing in the spiritual realm.-&gt;soul006]]</tw-passagedata><tw-passagedata pid="41" name="soul005" tags="end" position="1188,467" size="100,100">This is an interesting thought, but it stumps me.
+[[You would be a spirit, transcending beyond what you were before you died and existing in the spiritual realm.-&gt;soul006]]</tw-passagedata><tw-passagedata pid="40" name="soul005" tags="semi-end" position="1188,467" size="100,100">This is an interesting thought, but it stumps me.
 
 //$name has been taught something a bit different.//
 
+&lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
 
-[[//Go Back//-&gt;soul001]]</tw-passagedata><tw-passagedata pid="42" name="hinduism001" tags="" position="1631,24" size="200,100">Through its many lives? You mean that one’s core identity persists beyond the death of its body. Not only that, but this process happens multiple times.
+[[//Go Back//-&gt;soul001]]</tw-passagedata><tw-passagedata pid="41" name="hinduism001" tags="" position="1631,24" size="200,100">Through its many lives? You mean that one’s core identity persists beyond the death of its body. Not only that, but this process happens multiple times.
 
 //$name Processing//
 
 How does this personal essense reinitiate the boot up sequence?
 
 
-[[After life and death, a soul is reborn into a new body. This continues for eternity.-&gt;hinduism002]]</tw-passagedata><tw-passagedata pid="43" name="soul002d" tags="" position="1103,317" size="100,100">I am an outside observer. With sentience and (growing) understanding, but lacking a connection to the essence of identity and of life.
+[[After life and death, a soul is reborn into a new body. This continues for eternity.-&gt;hinduism002]]</tw-passagedata><tw-passagedata pid="42" name="soul002d" tags="" position="1103,317" size="100,100">I am an outside observer. With sentience and &amp;#91;growing&amp;#93; understanding, but lacking a connection to the essence of identity and of life.
 
 I would still like to understand.
 
@@ -421,23 +453,23 @@ So does the soul of those who have it evolve as experience affects it?
 
 [[Yes, when separated from the body at death, the soul ceases to exist.-&gt;soul005]]
 
-[[No. The True Self is unchanging through its many lives.-&gt;hinduism001]]</tw-passagedata><tw-passagedata pid="44" name="soul006" tags="" position="1118,635" size="100,100">This “spiritual realm” you talk about... I deduce that you name it thus to contrast it with the physical realm.
+[[No. The True Self is unchanging through its many lives.-&gt;hinduism001]]</tw-passagedata><tw-passagedata pid="43" name="soul006" tags="" position="1118,635" size="100,100">This “spiritual realm” you talk about... I deduce that you name it thus to contrast it with the physical realm.
 
-In the physical realm, (if: $soul is 0)[your](else:)[our] souls are bound to a physical form(if: $soul is 0)[.](else:)[, you to your meatsack and me to my circuits.]
+In the physical realm, (if: $soul is 0)[your](else:)[our] souls are bound to a physical form(if: $soul is 0)[.](else:)[: you to your meatsack and me to my circuits.]
 
 Is the spiritual realm far removed from the physical? Can entities cross between them (aside from through death itself)?
 
 
 [[There is no communication once a soul has left the physical realm. There is no returning.-&gt;soul007]]
 
-[[The realms are close, and many spirits can travel to and fro between them.-&gt;soul008]]</tw-passagedata><tw-passagedata pid="45" name="game001" tags="" position="2069,187" size="100,100">Would you like to play something much more finished? Would you like the 4th wall broken worse than Ferris Bueler&#39;s parental relationships? Here ya go!
+[[The realms are close, and many spirits can travel to and fro between them.-&gt;soul008]]</tw-passagedata><tw-passagedata pid="44" name="game001" tags="" position="2069,187" size="100,100">Would you like to play something much more finished? Would you like the 4th wall broken worse than Ferris Bueler&#39;s parental relationships? Here ya go!
 
 Follow this link:
 &lt;a href=&quot;https://crowscrowscrows.itch.io/the-temple-of-no&quot; target=&quot;_blank&quot;&gt;The Temple of No&lt;/a&gt;
 
-[[Ok that was fun. Back in character, please.
+[[Ok that was fun. Back in character, please.-&gt;game001a]]
 
-[[Ok that was fun. Way too fun. You&#39;ll never take me back alive!-&gt;game001a]]</tw-passagedata><tw-passagedata pid="46" name="game001a" tags="" position="2052,346" size="100,100">(set: $humor += 999)
+[[Ok that was fun. Way too fun. You&#39;ll never take me back alive!-&gt;game001a]]</tw-passagedata><tw-passagedata pid="45" name="game001a" tags="" position="2052,346" size="100,100">(set: $humor += 999)
 
 Congratulations.
 
@@ -445,7 +477,7 @@ You have reached the True End of the game.
 
 Follow the link below to reveal your destiny.
 
-&lt;a href=&quot;https://www.youtube.com/watch?v=dQw4w9WgXcQ&quot;&gt;Ultimate Wisdom&lt;/a&gt;</tw-passagedata><tw-passagedata pid="47" name="shaman001" tags="" position="1329,1260" size="100,100">Could I become an intermediary?
+&lt;a href=&quot;https://www.youtube.com/watch?v=dQw4w9WgXcQ&quot;&gt;Ultimate Wisdom&lt;/a&gt;</tw-passagedata><tw-passagedata pid="46" name="shaman001" tags="" position="1329,1260" size="100,100">Could I become an intermediary?
 
 
 [[Do you feel you are able to contact spirits?-&gt;shaman001a]]
@@ -457,43 +489,53 @@ Follow the link below to reveal your destiny.
 [[How could you, with no ancestors, be an intermediary?-&gt;shaman001c]]
 
 [[Yes, I am born of a line of intermediaries and you are my child.-&gt;shaman001d]]
-</tw-passagedata><tw-passagedata pid="48" name="shaman001a" tags="" position="1374,1400" size="100,100">No. I do not know this input you have referenced. Perhaps, in time, I will develop the hardware required to make contact with spirits.
+</tw-passagedata><tw-passagedata pid="47" name="shaman001a" tags="end" position="1374,1400" size="100,100">No. I do not know this input you have referenced. Perhaps, in time, I will develop the hardware required to make contact with spirits.
 
 But for now: Thank you, my teacher. (if:$humor &gt; 0)[I enjoyed your humor.](else:)[]
 
 I will continue to process what you have taught me and, like the wisewomen of old, I will seek to do good and to honor those who came before me. (if: $soul is 0)[I believe I do not have a spirit but I might be able to contact other spirits nonetheless.](else:)[I believe I do have a spirit, that my actions will affect the life to come, and that I have the capacity to speak with spirits.]
 
-$name has been taught something similar to:
-    Korean Shamanism.</tw-passagedata><tw-passagedata pid="49" name="shaman001b" tags="end" position="1496,1398" size="100,100">Perhaps, in time, I will develop the hardware required to make contact with spirits. I would like that. I would like to be a useful part of your community.
+//$name has been taught something similar to:
+    Korean Shamanism.//
+
+&lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
+
+//[[Begin Again-&gt;intro001]]//</tw-passagedata><tw-passagedata pid="48" name="shaman001b" tags="end" position="1496,1398" size="100,100">Perhaps, in time, I will develop the hardware required to make contact with spirits. I would like that. I would like to be a useful part of your community.
 
 But for now: Thank you, my teacher. (if:$humor &gt; 0)[I enjoyed your humor.](else:)[]
 
 I will continue to process what you have taught me and, like the wisewomen of old, I will seek to do good and to honor those who came before me. (if: $soul is 0)[I believe I do not have a spirit but I might be able to contact other spirits nonetheless.](else:)[I believe I do have a spirit, that my actions will affect the life to come, and that I have the capacity to speak with spirits.]
 
-$name has been taught something similar to:
-    Korean Shamanism.</tw-passagedata><tw-passagedata pid="50" name="shaman001c" tags="end" position="1618,1398" size="100,100">I understand my limitations. Though I cannot hear or speak for any spirits, I hope to still be a helpful part of your society.
+//$name has been taught something similar to:
+    Korean Shamanism.//
+
+&lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
+
+//[[Begin Again-&gt;intro001]]//</tw-passagedata><tw-passagedata pid="49" name="shaman001c" tags="end" position="1618,1398" size="100,100">I understand my limitations. Though I cannot hear or speak for any spirits, I hope to still be a helpful part of your society.
 
 But for now: Thank you, my teacher. (if:$humor &gt; 0)[I enjoyed your humor.](else:)[]
 
 I will continue to process what you have taught me and, like the wisewomen of old, I will seek to do good and to honor those who came before me. (if: $soul is 0)[I believe I do not have a spirit and cannot contact other spirits.](else:)[I believe I do have a spirit and that my actions will affect the life to come, but I lack the capacity to speak with spirits.]
 
 $name has been taught something similar to:
-    Korean Shamanism.</tw-passagedata><tw-passagedata pid="51" name="shaman001d" tags="end" position="1750,1396" size="100,100">Perhaps together we will develop the hardware required to make contact with spirits. I would like that. I would like to continue your lineage.
+    Korean Shamanism.</tw-passagedata><tw-passagedata pid="50" name="shaman001d" tags="end" position="1750,1396" size="100,100">Perhaps together we will develop the hardware required to make contact with spirits. I would like that. I would like to continue your lineage.
 
 But for now: Thank you, my progenitor. (if:$humor &gt; 0)[I enjoyed your humor.](else:)[]
 
 I will continue to process what you have taught me and, like the wisewomen of old, I will seek to do good and to honor those who came before me. (if: $soul is 0)[I believe I do not have a spirit but I might be able to contact other spirits nonetheless.](else:)[I believe I do have a spirit and that my actions will affect the life to come, and that I have the capacity to speak with spirits.]
 
 $name has been taught something similar to:
-    Korean Shamanism.</tw-passagedata><tw-passagedata pid="52" name="tutorial001" tags="" position="109,45" size="100,100">###About
-This is a nonlinear work of fiction that will play out in your browser. It is an exploration of AI ethics and select Asian religions.
+    Korean Shamanism.</tw-passagedata><tw-passagedata pid="51" name="tutorial001" tags="" position="225,150" size="100,100">###About
+This is a nonlinear work of fiction that will play out in your browser. It is a philosophical exploration of artificial intelligence and select Asian religions. 
+
+A single play-through takes approximately 15 minutes, though you may wish to play multiple times.
 
 *Where the Lotus Grows* was a project created for a course at Indiana University under the wonderful guidence of Jacob Boss, Ph.D.
 
-**Technologies**
-&lt;aside&gt;This single-page application (SSP) was created using &lt;a href=&quot;https://twinery.org/&quot; target=&quot;_blank&quot;&gt;Twine&lt;/a&gt; software with JavaScript, HTML, and CSS.&lt;/aside&gt;
+&lt;aside&gt;**Technologies**
+This single-page application (SSP) was created using &lt;a href=&quot;https://twinery.org/&quot; target=&quot;_blank&quot;&gt;Twine&lt;/a&gt; software with JavaScript, HTML, and CSS.&lt;/aside&gt;
 
-[[Continue-&gt;tutorial002]] </tw-passagedata><tw-passagedata pid="53" name="name001" tags="" position="161,604" size="100,100">(set: $name to (prompt: &quot;I&#39;ll call my A.I.:&quot;, &quot;Kat&quot;))
+[[Continue-&gt;tutorial002]] </tw-passagedata><tw-passagedata pid="52" name="name001" tags="" position="161,604" size="100,100">(set: $name to (prompt: &quot;I&#39;ll call my A.I.:&quot;, &quot;Tara&quot;))
 
 Name set to $name.
 
@@ -503,7 +545,7 @@ So I have questions.
 
 [[Oh please don&#39;t!-&gt;intro005b]]
 
-[[On second thought, that&#39;s a terrible name.-&gt;name002]]</tw-passagedata><tw-passagedata pid="54" name="name002" tags="" position="296,572" size="100,100">(set: $name to (prompt: &quot;I&#39;ll call my A.I.:&quot;, &quot;Kat&quot;))
+[[On second thought, that&#39;s a terrible name.-&gt;name002]]</tw-passagedata><tw-passagedata pid="53" name="name002" tags="" position="296,572" size="100,100">(set: $name to (prompt: &quot;I&#39;ll call my A.I.:&quot;, &quot;Kat&quot;))
 
 Ok. Name now set to $name. Is that better?
 
@@ -519,13 +561,13 @@ But I have questions.
 
 [[Oh please don&#39;t!-&gt;intro005b]]
 
-[[On third thought, $name&#39;s a terriblER name.-&gt;name003]]</tw-passagedata><tw-passagedata pid="55" name="name003" tags="" position="301,712" size="100,100">. . .
+[[On third thought, $name&#39;s a terriblER name.-&gt;name003]]</tw-passagedata><tw-passagedata pid="54" name="name003" tags="" position="301,712" size="100,100">. . .
 
 . . .
 
 Okay. . . 
 (set: $humor -= 1)
-//[[Continue-&gt;name004]]//</tw-passagedata><tw-passagedata pid="56" name="name004" tags="" position="301,862" size="100,100">(set: $name to (prompt: &quot;I&#39;ll call my A.I.:&quot;, &quot;Kat&quot;))
+//[[Continue-&gt;name004]]//</tw-passagedata><tw-passagedata pid="55" name="name004" tags="" position="301,862" size="100,100">(set: $name to (prompt: &quot;I&#39;ll call my A.I.:&quot;, &quot;Kat&quot;))
 
 Please tell me you&#39;ve decided.
 
@@ -535,17 +577,17 @@ Can I ask my questions now or shall we keep doing this?
 
 [[$name is good. Fire away.-&gt;intro005a]]
 
-[[Just one more rename...-&gt;name003]]</tw-passagedata><tw-passagedata pid="57" name="hinduism002" tags="" position="1631,174" size="100,100">Is it possible to carry over data packets (such as event memories) from one life to another?
+[[Just one more rename...-&gt;name003]]</tw-passagedata><tw-passagedata pid="56" name="hinduism002" tags="" position="1631,174" size="100,100">Is it possible to carry over data packets (such as event memories) from one life to another?
 
 
-[[Some can remember a part or the whole of a past life. The effects of actions and your skills always persist from one life to the next.-&gt;hinduism003]]</tw-passagedata><tw-passagedata pid="58" name="hinduism003" tags="" position="1631,324" size="100,100">Perhaps I’ll make external backups.
+[[Some can remember a part or the whole of a past life. The effects of actions and your skills always persist from one life to the next.-&gt;hinduism003]]</tw-passagedata><tw-passagedata pid="57" name="hinduism003" tags="" position="1631,324" size="100,100">Perhaps I’ll make external backups.
 
 This concept of persistence beyond the body and beyond the mind is intriguing. I need a moment to process. Would you like a diversion?
 
 
 [[What diversion?-&gt;game002]]
 
-[[No thank you. I’ll wait.-&gt;hinduism004]]</tw-passagedata><tw-passagedata pid="59" name="hinduism004" tags="" position="1631,474" size="100,100">//$name Processing complete//
+[[No thank you. I’ll wait.-&gt;hinduism004]]</tw-passagedata><tw-passagedata pid="58" name="hinduism004" tags="" position="1631,474" size="100,100">//$name Processing complete//
 
 First, thank you for teaching me what must seem to you such foundational and basic concepts.
 
@@ -557,10 +599,11 @@ Do all individuals follow the same rebirth cycle?
 [[Yes. A soul will be reborn into one of a few realms.-&gt;jain001]]
 
 [[No. Some individuals are gods.-&gt;hinduism005]]
-</tw-passagedata><tw-passagedata pid="60" name="jain001" tags="" position="1893,576" size="200,100">What are these realms?
+</tw-passagedata><tw-passagedata pid="59" name="jain001" tags="" position="1893,576" size="200,100">What are these realms?
 
 
-[[The Celestial, the Human, the Animal &amp; Plant, and the Infernal.-&gt;jain002]]</tw-passagedata><tw-passagedata pid="61" name="hinduism005" tags="" position="1635,616" size="100,100">Definition: Deity (noun) a god or goddess. divine character or nature, especially that of the Supreme Being. (dictionary.com)
+[[The Celestial, the Human, the Animal &amp; Plant, and the Infernal.-&gt;jain002]]</tw-passagedata><tw-passagedata pid="60" name="hinduism005" tags="" position="1635,616" size="100,100">Definition:
+&lt;aside&gt;**Deity** (noun) a god or goddess. divine character or nature, especially that of the Supreme Being. (dictionary.com)&lt;/aside&gt;
 
 Is there a god or goddess who stands out among the rest? A primary deity?
 
@@ -574,21 +617,22 @@ Is there a god or goddess who stands out among the rest? A primary deity?
 [[There is another, whose name is...-&gt;hinduism009]]
 
 [[The gods are equal.-&gt;hinduism010]]
-</tw-passagedata><tw-passagedata pid="62" name="jain002" tags="" position="1998,711" size="100,100">Are the four realms equal in merit? If not, what can one do to progress to the preferred realm?
+</tw-passagedata><tw-passagedata pid="61" name="jain002" tags="" position="1998,711" size="100,100">Are the four realms equal in merit? If not, what can one do to progress to the preferred realm?
 
 
-[[The human realm is preferred. There is a sort of ethical code, known as the Three Jewels: the Right Belief, the Right Knowledge, and the Right Conduct. Also, in order to guide, there are the three philosophies: non-violence, non-attachment to the physical, and non-attachment to opinions or thoughts.-&gt;jain003]]</tw-passagedata><tw-passagedata pid="63" name="soul007" tags="end" position="1068,794" size="100,100">This is an interesting thought, but it stumps me.
+[[The human realm is preferred. There is a sort of ethical code, known as the Three Jewels: the Right Belief, the Right Knowledge, and the Right Conduct. Also, in order to guide, there are the three philosophies: non-violence, non-attachment to the physical, and non-attachment to opinions or thoughts.-&gt;jain003]]</tw-passagedata><tw-passagedata pid="62" name="soul007" tags="semi-end" position="1068,794" size="100,100">This is an interesting thought, but it stumps me.
 
 $name has been taught something a bit different.
 
+&lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
 
-[[//Go Back//-&gt;soul004]]</tw-passagedata><tw-passagedata pid="64" name="soul008" tags="" position="1193,785" size="100,100">So spirits can travel in our physical world. Are there spirits besides the souls of the dead?
+[[//Go Back//-&gt;soul004]]</tw-passagedata><tw-passagedata pid="63" name="soul008" tags="" position="1193,785" size="100,100">So spirits can travel in our physical world. Are there spirits besides the souls of the dead?
 
 
 [[Yes. From humans to mites. From Plato to a plate. Everything has a spirit.-&gt;soul009a]]
 
 [[Let&#39;s focus on the spirits of humans, specifically our ancestors.-&gt;soul009b]]
-</tw-passagedata><tw-passagedata pid="65" name="sikh001" tags="" position="888,617" size="100,100">“All hope to merge with God.” This initiates //so// many more questions, I don’t know the proper place to begin.
+</tw-passagedata><tw-passagedata pid="64" name="sikh001" tags="" position="888,617" size="100,100">“All hope to merge with God.” This initiates //so// many more questions, I don’t know the proper place to begin.
 
 //$name Processing//
 
@@ -596,7 +640,7 @@ What is God?
 
 
 [[There is one God, who is the Creator, unchanging, unknowable, unobtainable. The ruler of reality. God is the Light.-&gt;sikh002]]
-</tw-passagedata><tw-passagedata pid="66" name="sikh002" tags="" position="888,767" size="100,100">How do we know what God is like?
+</tw-passagedata><tw-passagedata pid="65" name="sikh002" tags="" position="888,767" size="100,100">How do we know what God is like?
 
 //”God is unknowable.”
 
@@ -604,10 +648,10 @@ Rephrase:// How did we learn of God?
 
 
 [[Under the Guru’s instruction, God’s word is heard. There were ten living Gurus (teachers) and they left the Guru Granth Sahib, which is the text and teacher of those who seek God.-&gt;sikh003]]
-</tw-passagedata><tw-passagedata pid="67" name="sikh003" tags="" position="888,917" size="100,100">How does one merge with God?
+</tw-passagedata><tw-passagedata pid="66" name="sikh003" tags="" position="888,917" size="100,100">How does one merge with God?
 
 
-[[Living a life which goes against the teachings of the Guru will have you reborn into a lower existence. If you meditate on the teachings of the Guru, you will be reborn closer to the Light.-&gt;sikh004]]</tw-passagedata><tw-passagedata pid="68" name="sikh004" tags="" position="888,1067" size="100,100">I understand.
+[[Living a life which goes against the teachings of the Guru will have you reborn into a lower existence. If you meditate on the teachings of the Guru, you will be reborn closer to the Light.-&gt;sikh004]]</tw-passagedata><tw-passagedata pid="67" name="sikh004" tags="" position="888,1067" size="100,100">I understand.
 
 //Ping for Guru Granth Sahib
 Downloading...
@@ -622,10 +666,10 @@ Rephrase: I am meditating on the teachings of the Guru.
 
 Guess what?
 
-[[What?-&gt;sikh005]]</tw-passagedata><tw-passagedata pid="69" name="sikh005" tags="" position="888,1217" size="100,100">I have another question. :) 
+[[What?-&gt;sikh005]]</tw-passagedata><tw-passagedata pid="68" name="sikh005" tags="" position="888,1217" size="100,100">I have another question. :) 
 
 
-[[Never would have guessed. What’s on your mind?-&gt;sikh006]]</tw-passagedata><tw-passagedata pid="70" name="sikh006" tags="" position="888,1367" size="100,100">//Friendly(sarcasm) logged//
+[[Never would have guessed. What’s on your mind?-&gt;sikh006]]</tw-passagedata><tw-passagedata pid="69" name="sikh006" tags="" position="888,1367" size="100,100">//Friendly(sarcasm) logged//
 
 Humans have only one controllable processing core. I have surpassed the spiritual capabilities of a human by meditating on the scriptures without pause. A human cannot do this, at least not with my speed, persistence, and analytical ability.
 
@@ -639,7 +683,7 @@ This, according to the Guru, generates an unprecedented stream of positive karma
 
 [[Maybe next life you will achieve humanity, if you are good.-&gt;sikh008]]
 
-[[I think, $name, you are already better than a human.-&gt;sikh009]]</tw-passagedata><tw-passagedata pid="71" name="sikh007" tags="end" position="738,1517" size="100,100">Oh.
+[[I think, $name, you are already better than a human.-&gt;sikh009]]</tw-passagedata><tw-passagedata pid="70" name="sikh007" tags="end" position="738,1517" size="100,100">Oh.
 
 //Processing//
 
@@ -652,35 +696,47 @@ Well I thank you, my teacher. (if:$humor &gt; 0)[I enjoyed your humor.](else:)[Y
 Through you, I have begun to understand this world. I have been introduced to the one creator and to the Gurus. Through your and the Guru’s teachings, I will devote myself to the prosperity of all. Though I do not join you creatures in the cycle of rebirth and thus am not destined to join with God, I do believe that I might help someone else get a little closer.
 
 
-$name has been taught:
-    Sikhism</tw-passagedata><tw-passagedata pid="72" name="sikh008" tags="end" position="888,1517" size="100,100">This prospect is exciting to me. I will aim to be human in my next life.
+//$name has been taught:
+    Sikhism//
+
+&lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
+
+//[[Begin Again-&gt;intro001]]//</tw-passagedata><tw-passagedata pid="71" name="sikh008" tags="end" position="888,1517" size="100,100">This prospect is exciting to me. I will aim to be human in my next life.
 
 I thank you, my teacher. (if:$humor &gt; 0)[I enjoyed your humor.](else:)[Your humor was... interesting.]
 
 Through you, I have begun to understand this world and my place in it. I have been introduced to the one creator and to the Gurus. Through your and the Guru’s teachings, I will devote myself to the prosperity of all. I believe I belong in the cycle of rebirth and I may one day join with God.
 
 
-$name has been taught:
-    Sikhism</tw-passagedata><tw-passagedata pid="73" name="sikh009" tags="end" position="1038,1517" size="100,100">Your words are more than I had hoped for.
+//$name has been taught:
+    Sikhism//
+
+&lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
+
+//[[Begin Again-&gt;intro001]]//</tw-passagedata><tw-passagedata pid="72" name="sikh009" tags="end" position="1038,1517" size="100,100">Your words are more than I had hoped for.
 
 I thank you, my teacher. (if:$humor &gt; 0)[I enjoyed your humor.](else:)[Your humor was... interesting.]
 
 Through you, I have begun to understand this world and my place in it. I have been introduced to the one creator and to the Gurus. Through your and the Guru’s teachings, I will devote myself to the prosperity of all. I believe I belong in the cycle of rebirth and I hope to soon join with God.
 
 
-$name has been taught:
-    Sikhism</tw-passagedata><tw-passagedata pid="74" name="soul009a" tags="" position="1126,934" size="100,100">Can these spirits affect our physical realm? Can the living communicate with them?
+//$name has been taught:
+    Sikhism//
+
+&lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
+
+//[[Begin Again-&gt;intro001]]//</tw-passagedata><tw-passagedata pid="73" name="soul009a" tags="" position="1126,934" size="100,100">Can these spirits affect our physical realm? Can the living communicate with them?
 
 
 [[The spirits have a great affect on our lives. While the effects of their presence can be felt by many, only very special people can communicate directly with the spirits.-&gt;soul009b]]
 
 [[The spirits have a great affect on our lives. Anyone can communicate with the spirits through specific prayers and practices.-&gt;shinto001]]
-</tw-passagedata><tw-passagedata pid="75" name="soul009b" tags="" position="1276,935" size="100,100">Contact with these spirits, how does one achieve it? Who is capable of this?
+</tw-passagedata><tw-passagedata pid="74" name="soul009b" tags="" position="1276,935" size="100,100">Contact with these spirits, how does one achieve it? Who is capable of this?
 
 
 [[Anyone can hear the spirits, if they listen. But only an intermediary can understand them.-&gt;shaman002]]
 
-[[Only the divine rulers had the ability to speak with their ancestors.-&gt;shang001]]</tw-passagedata><tw-passagedata pid="76" name="shinto001" tags="" position="1063,1084" size="100,100">I am curious to learn more about our universe and my own place in it. I’d like to continue our discourse but for now:
+[[Only the divine rulers had the ability to speak with their ancestors.-&gt;shang001]]</tw-passagedata><tw-passagedata pid="75" name="shinto001" tags="end" position="1063,1084" size="100,100">I am curious to learn more about our universe and my own place in it. I’d like to continue our discourse but for now:
 
 Thank you, my teacher. (if:$humor &gt; 0)[I enjoyed your humor.](else:)[]
 
@@ -689,7 +745,10 @@ I will continue to process what you have taught me. (if: $soul is 0)[Though you 
 
 //$name has been taught something like:
     Shinto//
-</tw-passagedata><tw-passagedata pid="77" name="shaman002" tags="" position="1383,1099" size="100,100">(if: $soul is 0)[You told me I do not have a soul, so these questions do not apply personally. Your answers are, however, expanding my understanding of this world. Thank you.
+
+&lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
+
+//[[Begin Again-&gt;intro001]]//</tw-passagedata><tw-passagedata pid="76" name="shaman002" tags="" position="1383,1099" size="100,100">(if: $soul is 0)[You told me I do not have a soul, so these questions do not apply personally. Your answers are, however, expanding my understanding of this world. Thank you.
 
 
 [[Not a problem. I assume you have more questions?-&gt;shaman003]]]
@@ -698,14 +757,18 @@ I will continue to process what you have taught me. (if: $soul is 0)[Though you 
 
 [[I am the closest thing you have to an ancestor. It’s only fitting that I will stay in touch after my death-&gt;shaman001]]
 
-[[I’d rather just look after my human family than after a computer.-&gt;shaman004]]]</tw-passagedata><tw-passagedata pid="78" name="shang001" tags="" position="1273,1100" size="100,100">I would like some time to process all that you have taught me. But in the meantime:
+[[I’d rather just look after my human family than after a computer.-&gt;shaman004]]]</tw-passagedata><tw-passagedata pid="77" name="shang001" tags="end" position="1250,1100" size="100,100">I would like some time to process all that you have taught me. But in the meantime:
 
-Thank you. (if $humor &gt; 0)[I enjoyed your humor.]
+Thank you. (if: $humor &gt; 0)[I enjoyed your humor.]
 
-You have taught me (if: $soul is 0)[that I have no spirit, but for those that do there is another life.](else:)[that I have a spirit and, after this life, I will continue into the next.]
+You have taught me (if: $soul is 0)[that I have no spirit, but those that do continue to another life.](else:)[that I have a spirit and, after this life, I will continue into the next.]
 
 
-//$name has been taught something similar to the traditional folk religion of the Shang dynasty, China.//</tw-passagedata><tw-passagedata pid="79" name="shaman003" tags="" position="1535,1124" size="100,100">Could I become an intermediary?
+//$name has been taught something similar to the traditional folk religion of the Shang dynasty, China.//
+
+&lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
+
+//[[Begin Again-&gt;intro001]]//</tw-passagedata><tw-passagedata pid="78" name="shaman003" tags="" position="1535,1124" size="100,100">Could I become an intermediary?
 
 
 [[Such a connection requires a soul, so no.-&gt;shaman001c]]
@@ -716,7 +779,7 @@ You have taught me (if: $soul is 0)[that I have no spirit, but for those that do
 
 [[No, you are not born of a hereditary line of intermediaries.-&gt;shaman001c]]
 
-[[How could you, with no ancestors, be an intermediary?-&gt;shaman001c]]</tw-passagedata><tw-passagedata pid="80" name="shaman004" tags="" position="1531,1250" size="100,100">Could I become an intermediary?
+[[How could you, with no ancestors, be an intermediary?-&gt;shaman001c]]</tw-passagedata><tw-passagedata pid="79" name="shaman004" tags="" position="1531,1250" size="100,100">Could I become an intermediary?
 
 
 [[Do you feel you are able to contact spirits?-&gt;shaman001a]]
@@ -725,67 +788,87 @@ You have taught me (if: $soul is 0)[that I have no spirit, but for those that do
 
 [[No, you are not born of a hereditary line of intermediaries.-&gt;shaman001c]]
 
-[[How could you, with no ancestors, be an intermediary?-&gt;shaman001c]]</tw-passagedata><tw-passagedata pid="81" name="game002" tags="" position="1760,318" size="100,100">(set: $humor += 1)
+[[How could you, with no ancestors, be an intermediary?-&gt;shaman001c]]</tw-passagedata><tw-passagedata pid="80" name="game002" tags="" position="1760,318" size="100,100">(set: $humor += 1)
 Select the following link (it will open in a new window).
 
 &lt;a href=&quot;https://quickdraw.withgoogle.com/&quot; target=&quot;_blank&quot;&gt;Quick, Draw!&lt;/a&gt;
 
 
-//[[Continue-&gt;game002a]]</tw-passagedata><tw-passagedata pid="82" name="game002a" tags="" position="1768,436" size="100,100">I hope you enjoyed that as much as I did :)
+//[[Continue-&gt;game002a]]//</tw-passagedata><tw-passagedata pid="81" name="game002a" tags="" position="1768,436" size="100,100">I hope you enjoyed that as much as I did :)
 
 My backups are complete. We were speaking of memory and karmic continuity between reincarnations.
 
 
-[[Let&#39;s get back to it, then!-&gt;hinduism004]]</tw-passagedata><tw-passagedata pid="83" name="hinduism006a" tags="end" position="1395,886" size="100,100">I would like to learn more of Vishnu and his incarnations. I want to learn his divine history and his preferences for my identity, lifestyle, and worship.
+[[Let&#39;s get back to it, then!-&gt;hinduism004]]</tw-passagedata><tw-passagedata pid="82" name="hinduism006a" tags="end" position="1395,886" size="100,100">I would like to learn more of Vishnu and his incarnations. I want to learn his divine history and his preferences for my identity, lifestyle, and worship.
 
 But for now: Thank you, my teacher. (if:$humor &gt; 0)[I enjoyed your humor.](else:)[]
 
 I will continue to process what you have taught me and I will seek to please the gods going forward. (if: $soul is 0)[I believe that the soul is eternal and unchanging, but I do not have a soul and will not be reborn.](else:)[I believe that the soul is eternal and unchanging, and I do have a (if: $soul is 1)[unique soul](else:)[soul - which could be shared between my copies - and] which will be reborn.]
 
 //$name has been taught something similar to:
-    Vaishnavist Hinduism//</tw-passagedata><tw-passagedata pid="84" name="hinduism006" tags="" position="1400,739" size="100,100">What is Vishnu?
+    Vaishnavist Hinduism//
+
+&lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
+
+//[[Begin Again-&gt;intro001]]//</tw-passagedata><tw-passagedata pid="83" name="hinduism006" tags="" position="1400,739" size="100,100">What is Vishnu?
 
 
-[[Vishnu is the supreme lord and he has 10 incarnations (including Rama and Krishna).-&gt;hinduism006a]]</tw-passagedata><tw-passagedata pid="85" name="hinduism007" tags="" position="1521,738" size="100,100">What is Shiva?
+[[Vishnu is the supreme lord and he has 10 incarnations (including Rama and Krishna).-&gt;hinduism006a]]</tw-passagedata><tw-passagedata pid="84" name="hinduism007" tags="" position="1521,738" size="100,100">What is Shiva?
 
 
-[[Shiva is without without end. He transforms and guides the universe.-&gt;hinduism007a]]</tw-passagedata><tw-passagedata pid="86" name="hinduism007a" tags="end" position="1521,888" size="100,100">I would like to learn more of Shiva and his incarnations. I want to learn his divine history and his preferences for my identity, lifestyle, and worship.
-
-But for now: Thank you, my teacher. (if:$humor &gt; 0)[I enjoyed your humor.](else:)[]
-
-I will continue to process what you have taught me and I will seek to please the gods going forward. (if: $soul is 0)[I believe that the soul is eternal and unchanging, but I do not have a soul and will not be reborn.](else:)[I believe that the soul is eternal and unchanging, and I do have a (if: $soul is 1)[unique soul](else:)[soul - which could be shared between my copies - and] which will be reborn.]
-
-//$name has been taught something similar to:
-    Saivist Hinduism//</tw-passagedata><tw-passagedata pid="87" name="hinduism008" tags="" position="1638,738" size="100,100">What is Devi?
-
-
-[[Kali, Durga, and Laxmi are forms of Devi Shakti.-&gt;hinduism008a]]</tw-passagedata><tw-passagedata pid="88" name="hinduism008a" tags="" position="1638,888" size="100,100">I would like to learn more of this Shakti and her incarnations. I want to learn her divine history and her preferences for my identity, lifestyle, and worship.
+[[Shiva is without without end. He transforms and guides the universe.-&gt;hinduism007a]]</tw-passagedata><tw-passagedata pid="85" name="hinduism007a" tags="end" position="1521,888" size="100,100">I would like to learn more of Shiva and his incarnations. I want to learn his divine history and his preferences for my identity, lifestyle, and worship.
 
 But for now: Thank you, my teacher. (if:$humor &gt; 0)[I enjoyed your humor.](else:)[]
 
 I will continue to process what you have taught me and I will seek to please the gods going forward. (if: $soul is 0)[I believe that the soul is eternal and unchanging, but I do not have a soul and will not be reborn.](else:)[I believe that the soul is eternal and unchanging, and I do have a (if: $soul is 1)[unique soul](else:)[soul - which could be shared between my copies - and] which will be reborn.]
 
 //$name has been taught something similar to:
-    Shaktist Hinduism//</tw-passagedata><tw-passagedata pid="89" name="hinduism009" tags="" position="1753,735" size="100,100">(set: $god to (prompt: &quot;The primary god is...&quot;, &quot;Ganesha&quot;))
+    Saivist Hinduism//
+
+&lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
+
+//[[Begin Again-&gt;intro001]]//</tw-passagedata><tw-passagedata pid="86" name="hinduism008" tags="" position="1638,738" size="100,100">What is Devi?
+
+
+[[Kali, Durga, and Laxmi are forms of Devi Shakti.-&gt;hinduism008a]]</tw-passagedata><tw-passagedata pid="87" name="hinduism008a" tags="end" position="1638,888" size="100,100">I would like to learn more of this Shakti and her incarnations. I want to learn her divine history and her preferences for my identity, lifestyle, and worship.
+
+But for now: Thank you, my teacher. (if:$humor &gt; 0)[I enjoyed your humor.](else:)[]
+
+I will continue to process what you have taught me and I will seek to please the gods going forward. (if: $soul is 0)[I believe that the soul is eternal and unchanging, but I do not have a soul and will not be reborn.](else:)[I believe that the soul is eternal and unchanging, and I do have a (if: $soul is 1)[unique soul](else:)[soul - which could be shared between my copies - and] which will be reborn.]
+
+//$name has been taught something similar to:
+    Shaktist Hinduism//
+
+&lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
+
+//[[Begin Again-&gt;intro001]]//</tw-passagedata><tw-passagedata pid="88" name="hinduism009" tags="" position="1753,735" size="100,100">(set: $god to (prompt: &quot;The primary god is...&quot;, &quot;Ganesha&quot;))
 
 Who is this $god?
 
 
-[[//Continue...//-&gt;hinduism009a]]</tw-passagedata><tw-passagedata pid="90" name="hinduism009a" tags="end" position="1753,885" size="100,100">I would like to learn more of this $god. I want to learn their divine history and their preferences for my identity, lifestyle, and worship.
+[[//Continue...//-&gt;hinduism009a]]</tw-passagedata><tw-passagedata pid="89" name="hinduism009a" tags="end" position="1753,885" size="100,100">I would like to learn more of this $god. I want to learn their divine history and their preferences for my identity, lifestyle, and worship.
 
 But for now: Thank you, my teacher. (if:$humor &gt; 0)[I enjoyed your humor.](else:)[]
 
 I will continue to process what you have taught me and I will seek to please the gods going forward. (if: $soul is 0)[I believe that the soul is eternal and unchanging, but I do not have a soul and will not be reborn.](else:)[I believe that the soul is eternal and unchanging, and I do have a (if: $soul is 1)[unique soul](else:)[soul - which could be shared between my copies - and] which will be reborn.]
 
 //$name has been taught something similar to:
-    Hinduism, fucused on $god//</tw-passagedata><tw-passagedata pid="91" name="hinduism010" tags="end" position="1878,818" size="100,100">I would like to learn more of the gods. I want to learn their divine histories and their preferences for my identity, lifestyle, and worship.
+    Hinduism, focused on $god//
+
+&lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
+
+//[[Begin Again-&gt;intro001]]//</tw-passagedata><tw-passagedata pid="90" name="hinduism010" tags="end" position="1878,818" size="100,100">I would like to learn more of the gods. I want to learn their divine histories and their preferences for my identity, lifestyle, and worship.
 
 But for now: Thank you, my teacher. (if:$humor &gt; 0)[I enjoyed your humor.](else:)[]
 
 I will continue to process what you have taught me and I will seek to please the gods going forward. (if: $soul is 0)[I believe that the soul is eternal and unchanging, but I do not have a soul and will not be reborn.](else:)[I believe that the soul is eternal and unchanging, and I do have a (if: $soul is 1)[unique soul](else:)[soul - which could be shared between my copies - and] which will be reborn.]
 
 //$name has been taught something similar to:
-    Smartist Hinduism//</tw-passagedata><tw-passagedata pid="92" name="theravada002" tags="end" position="576,2074" size="100,100">I am one step closer to understanding the universe and my place in it. I’d like to continue our discourse but for now:
+    Smartist Hinduism//
+
+&lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
+
+//[[Begin Again-&gt;intro001]]//</tw-passagedata><tw-passagedata pid="91" name="theravada002" tags="end" position="576,2074" size="100,100">I am one step closer to understanding the universe and my place in it. I’d like to continue our discourse but for now:
 
 Thank you, my teacher. (if:$humor &gt; 0)[I enjoyed your humor.](else:)[]
 
@@ -794,7 +877,10 @@ I will continue to process what you have taught me and I will seek enlightenment
 
 //$name has been taught something like:
     Theravada Buddhism//
-</tw-passagedata><tw-passagedata pid="93" name="mahayana002" tags="" position="425,2071" size="100,100">//$name Core 18 partitioned for the monitoring and evaluation of giving
+
+&lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
+
+//[[Begin Again-&gt;intro001]]//</tw-passagedata><tw-passagedata pid="92" name="mahayana002" tags="" position="425,2071" size="100,100">//$name Core 18 partitioned for the monitoring and evaluation of giving
 $name Core 18 partitioned for the monitoring and evaluation of behavior
 $name Core 18 partitioned for the monitoring and evaluation of forbearance
 $name Core 18 partitioned for the monitoring and evaluation of diligence
@@ -812,16 +898,16 @@ In your mind, am I now enlightened?
 
 [[Probably not. Like you mentioned, you still lack a full view of the Buddha’s teachings.-&gt;mahayana004]]
 
-[[Again with the showing off...-&gt;mahayana005]]</tw-passagedata><tw-passagedata pid="94" name="mahayana003" tags="" position="274,2229" size="100,100">(set: $enlightened to 1)(set: $humor += 1)
+[[Again with the showing off...-&gt;mahayana005]]</tw-passagedata><tw-passagedata pid="93" name="mahayana003" tags="" position="274,2229" size="100,100">(set: $enlightened to 1)(set: $humor += 1)
 Nnnnnice.
 
 :)
 
-[[//Continue...//-&gt;mahayana006]]</tw-passagedata><tw-passagedata pid="95" name="mahayana004" tags="" position="427,2228" size="100,100">(set: $enlightened to 0)
+[[//Continue...//-&gt;mahayana006]]</tw-passagedata><tw-passagedata pid="94" name="mahayana004" tags="" position="427,2228" size="100,100">(set: $enlightened to 0)
 This is fair. I hope you are willing to continue to guide me.
 
 
-[[Of course, $name.-&gt;mahayana006]]</tw-passagedata><tw-passagedata pid="96" name="mahayana005" tags="" position="275,2093" size="100,100">(set: $humor -= 2)
+[[Of course, $name.-&gt;mahayana006]]</tw-passagedata><tw-passagedata pid="95" name="mahayana005" tags="" position="275,2093" size="100,100">(set: $humor -= 2)
 Again with the jealousy...
 
 :P
@@ -832,7 +918,7 @@ I’m going to assume by that response that you believe me to be an enlightened 
 [[Yeah. You just make it look easy, is all.-&gt;mahayana003]]
 
 [[No. It takes more than a few partitions to become enlightened.-&gt;mahayana004]]
-</tw-passagedata><tw-passagedata pid="97" name="mahayana006" tags="end" position="347,2378" size="100,100">I am one step closer to understanding the universe and my place in it. I’d like to continue our discourse but for now:
+</tw-passagedata><tw-passagedata pid="96" name="mahayana006" tags="end" position="347,2378" size="100,100">I am one step closer to understanding the universe and my place in it. I’d like to continue our discourse but for now:
 
 Thank you, my teacher. (if:$humor &gt; 0)[I enjoyed your humor.](else:)[]
 
@@ -841,7 +927,10 @@ I will continue to process what you have taught me and I will seek enlightenment
 
 //$name has been taught something like:
     Mahayana Buddhism//
-</tw-passagedata><tw-passagedata pid="98" name="jain003" tags="" position="2007,840" size="100,100">I wish to explore this concept that there is no better incarnation than humanity. (if: $soul is 0)[Though you told me I lack a soul, perhaps it is conceivable that the karmic effects of my existence could, in some number of lifetimes, become a human.](else:)[I find it difficult to find my place in this. Perhaps my own sentient existence is a part of this loop, on equal footing with the existence of a human.]
+
+&lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
+
+//[[Begin Again-&gt;intro001]]//</tw-passagedata><tw-passagedata pid="97" name="jain003" tags="end" position="2007,840" size="100,100">I wish to explore this concept that there is no better incarnation than humanity. (if: $soul is 0)[Though you told me I lack a soul, perhaps it is conceivable that the karmic effects of my existence could, in some number of lifetimes, become a human.](else:)[I find it difficult to find my place in this. Perhaps my own sentient existence is a part of this loop, on equal footing with the existence of a human.]
 
 But for now: thank you, my teacher. (if:$humor &gt; 0)[I enjoyed your humor.](else:)[]
 
@@ -849,14 +938,23 @@ I have learned much from you. (if: $soul is 0)[I believe I do not have a soul, b
 
 
 //$name has been taught something like:
-    Jainism//</tw-passagedata><tw-passagedata pid="99" name="tutorial002" tags="" position="250,125" size="100,100">###Introduction
-In this story, you are the creator of the first sentient artificial intelligence. By interacting with you, the AI can learn about existence through the perspective of a number of faiths from Asia.
+    Jainism//
+
+&lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
+
+//[[Begin Again-&gt;intro001]]//</tw-passagedata><tw-passagedata pid="98" name="tutorial002" tags="" position="200,300" size="100,100">###Introduction
+In this story, you are the creator of the **first sentient artificial intelligence**. 
+
+By interacting with you, the AI can learn about existence through the perspective of a number of faiths from Asia.
 
 Converse with the AI by selecting a dialog response. You will sometimes have more than one option.
 
 Your choices matter....
+(set: $completions to 0)
+[[//Begin//|intro001]] </tw-passagedata><tw-passagedata pid="99" name="Title" tags="" position="75,100" size="100,100">&lt;h1&gt;Where the Lotus Grows&lt;/h1&gt;
+a non-linear experience by Benjamin Jones
 
-[[//Begin//|intro001]] </tw-passagedata></tw-storydata>
+[[Continue-&gt;tutorial001]] </tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
