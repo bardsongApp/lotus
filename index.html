@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Lotus</title>
-<style title="Twine CSS">@-webkit-keyframes appear{0%{opacity:0}to{opacity:1}}@keyframes appear{0%{opacity:0}to{opacity:1}}@-webkit-keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@-webkit-keyframes rumble{50%{-webkit-transform:translateY(-0.2em);transform:translateY(-0.2em)}}@keyframes rumble{50%{-webkit-transform:translateY(-0.2em);transform:translateY(-0.2em)}}@-webkit-keyframes shudder{50%{-webkit-transform:translateX(0.2em);transform:translateX(0.2em)}}@keyframes shudder{50%{-webkit-transform:translateX(0.2em);transform:translateX(0.2em)}}@-webkit-keyframes box-flash{0%{background-color:white;color:white}}@keyframes box-flash{0%{background-color:white;color:white}}@-webkit-keyframes pulse{0%{-webkit-transform:scale(0, 0);transform:scale(0, 0)}20%{-webkit-transform:scale(1.2, 1.2);transform:scale(1.2, 1.2)}40%{-webkit-transform:scale(0.9, 0.9);transform:scale(0.9, 0.9)}60%{-webkit-transform:scale(1.05, 1.05);transform:scale(1.05, 1.05)}80%{-webkit-transform:scale(0.925, 0.925);transform:scale(0.925, 0.925)}to{-webkit-transform:scale(1, 1);transform:scale(1, 1)}}@keyframes pulse{0%{-webkit-transform:scale(0, 0);transform:scale(0, 0)}20%{-webkit-transform:scale(1.2, 1.2);transform:scale(1.2, 1.2)}40%{-webkit-transform:scale(0.9, 0.9);transform:scale(0.9, 0.9)}60%{-webkit-transform:scale(1.05, 1.05);transform:scale(1.05, 1.05)}80%{-webkit-transform:scale(0.925, 0.925);transform:scale(0.925, 0.925)}to{-webkit-transform:scale(1, 1);transform:scale(1, 1)}}@-webkit-keyframes shudder-in{0%, to{-webkit-transform:translateX(0em);transform:translateX(0em)}5%, 25%, 45%{-webkit-transform:translateX(-1em);transform:translateX(-1em)}15%, 35%, 55%{-webkit-transform:translateX(1em);transform:translateX(1em)}65%{-webkit-transform:translateX(-0.6em);transform:translateX(-0.6em)}75%{-webkit-transform:translateX(0.6em);transform:translateX(0.6em)}85%{-webkit-transform:translateX(-0.2em);transform:translateX(-0.2em)}95%{-webkit-transform:translateX(0.2em);transform:translateX(0.2em)}}@keyframes shudder-in{0%, to{-webkit-transform:translateX(0em);transform:translateX(0em)}5%, 25%, 45%{-webkit-transform:translateX(-1em);transform:translateX(-1em)}15%, 35%, 55%{-webkit-transform:translateX(1em);transform:translateX(1em)}65%{-webkit-transform:translateX(-0.6em);transform:translateX(-0.6em)}75%{-webkit-transform:translateX(0.6em);transform:translateX(0.6em)}85%{-webkit-transform:translateX(-0.2em);transform:translateX(-0.2em)}95%{-webkit-transform:translateX(0.2em);transform:translateX(0.2em)}}.debug-mode tw-expression[type=hookref]{background-color:rgba(115,123,140,0.15)}.debug-mode tw-expression[type=hookref]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"?" attr(name)}.debug-mode tw-expression[type=variable]{background-color:rgba(140,128,115,0.15)}.debug-mode tw-expression[type=variable]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"$" attr(name)}.debug-mode tw-expression[type=tempVariable]{background-color:rgba(140,128,115,0.15)}.debug-mode tw-expression[type=tempVariable]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"_" attr(name)}.debug-mode tw-expression[type=macro]:nth-of-type(4n+0){background-color:rgba(136,153,102,0.15)}.debug-mode tw-expression[type=macro]:nth-of-type(2n+1){background-color:rgba(102,153,102,0.15)}.debug-mode tw-expression[type=macro]:nth-of-type(4n+2){background-color:rgba(102,153,136,0.15)}.debug-mode tw-expression[type=macro][name="display"]{background-color:rgba(0,170,255,0.1) !important}.debug-mode tw-expression[type=macro][name="if"],.debug-mode tw-expression[type=macro][name="if"]+tw-hook:not([name]),.debug-mode tw-expression[type=macro][name="unless"],.debug-mode tw-expression[type=macro][name="unless"]+tw-hook:not([name]),.debug-mode tw-expression[type=macro][name="elseif"],.debug-mode tw-expression[type=macro][name="elseif"]+tw-hook:not([name]),.debug-mode tw-expression[type=macro][name="else"],.debug-mode tw-expression[type=macro][name="else"]+tw-hook:not([name]){background-color:rgba(0,255,0,0.1) !important}.debug-mode tw-expression[type=macro].false{background-color:rgba(255,0,0,0.2) !important}.debug-mode tw-expression[type=macro].false+tw-hook:not([name]){display:none}.debug-mode tw-expression[type=macro][name="a"],.debug-mode tw-expression[type=macro][name="array"],.debug-mode tw-expression[type=macro][name="datamap"],.debug-mode tw-expression[type=macro][name="dataset"],.debug-mode tw-expression[type=macro][name="colour"],.debug-mode tw-expression[type=macro][name="color"],.debug-mode tw-expression[type=macro][name="num"],.debug-mode tw-expression[type=macro][name="number"],.debug-mode tw-expression[type=macro][name="text"],.debug-mode tw-expression[type=macro][name="print"]{background-color:rgba(255,255,0,0.2) !important}.debug-mode tw-expression[type=macro][name="put"],.debug-mode tw-expression[type=macro][name="set"]{background-color:rgba(255,128,0,0.2) !important}.debug-mode tw-expression[type=macro][name="script"]{background-color:rgba(255,191,0,0.2) !important}.debug-mode tw-expression[type=macro][name="style"]{background-color:rgba(185,198,198,0.2) !important}.debug-mode tw-expression[type=macro][name^="link"],.debug-mode tw-expression[type=macro][name^="click"],.debug-mode tw-expression[type=macro][name^="mouseover"],.debug-mode tw-expression[type=macro][name^="mouseout"]{background-color:rgba(128,223,32,0.2) !important}.debug-mode tw-expression[type=macro][name^="replace"],.debug-mode tw-expression[type=macro][name^="prepend"],.debug-mode tw-expression[type=macro][name^="append"],.debug-mode tw-expression[type=macro][name^="remove"]{background-color:rgba(223,96,32,0.2) !important}.debug-mode tw-expression[type=macro][name="live"]{background-color:rgba(32,96,223,0.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 0.5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,0.5)}.debug-mode tw-hook{background-color:rgba(0,85,255,0.1) !important}.debug-mode tw-hook::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"]"}.debug-mode tw-hook[name]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"]<" attr(name) "|"}.debug-mode tw-pseudo-hook{background-color:rgba(255,170,0,0.1) !important}.debug-mode tw-collapsed::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"}"}.debug-mode tw-verbatim::before,.debug-mode tw-verbatim::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"`"}.debug-mode tw-align[style*="text-align: center"]{background:linear-gradient(to right, rgba(255,204,189,0) 0%, rgba(255,204,189,0.25) 50%, rgba(255,204,189,0) 100%)}.debug-mode tw-align[style*="text-align: left"]{background:linear-gradient(to right, rgba(255,204,189,0.25) 0%, rgba(255,204,189,0) 100%)}.debug-mode tw-align[style*="text-align: right"]{background:linear-gradient(to right, rgba(255,204,189,0) 0%, rgba(255,204,189,0.25) 100%)}.debug-mode tw-column{background-color:rgba(189,228,255,0.2)}.debug-mode tw-enchantment{animation:enchantment 0.5s infinite;-webkit-animation:enchantment 0.5s infinite;border:1px solid}.debug-mode tw-link::after,.debug-mode tw-broken-link::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:attr(passage-name)}.debug-mode tw-include{background-color:rgba(204,128,51,0.1)}.debug-mode tw-include::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:attr(type) ' "' attr(title) '"'}@keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}@-webkit-keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}tw-debugger{position:fixed;box-sizing:border-box;bottom:0;right:0;z-index:999999;min-width:10em;min-height:1em;padding:1em;font-size:1.25em;font-family:sans-serif;border-left:solid #000 2px;border-top:solid #000 2px;border-top-left-radius:.5em;background:#fff;opacity:1}tw-debugger select{margin-right:1em;width:12em}tw-debugger button{border-radius:3px;border:solid #999 1px;margin:auto 4px;background-color:#fff;font-size:inherit}tw-debugger button.enabled{background-color:#eee;box-shadow:inset #ddd 3px 5px 0.5em}tw-debugger .variables{display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex;-webkit-box-direction:normal;-webkit-box-orient:vertical;-webkit-flex-direction:column;-moz-flex-direction:column;-ms-flex-direction:column;flex-direction:column;position:absolute;bottom:100%;left:-2px;right:0;padding:1em;max-height:40vh;overflow-y:scroll;overflow-x:hidden;z-index:999998;background:#fff;border:inherit;border-top-left-radius:.5em;border-bottom-left-radius:.5em;font-size:0.8em}tw-debugger .variables:empty,tw-debugger .variables[hidden]{display:none}tw-debugger .variables .variable-row{display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex;-webkit-box-direction:normal;-webkit-box-orient:horizontal;-webkit-flex-direction:row;-moz-flex-direction:row;-ms-flex-direction:row;flex-direction:row;flex-shrink:0}tw-debugger .variables .variable-row:nth-child(2n){background:#EEE}tw-debugger .variables .variable-name{display:inline-block;width:50%}tw-debugger .variables .variable-name::before{content:"$"}tw-debugger .variables .variable-name.temporary::before{content:"_"}tw-debugger .variables .variable-name .temporary-variable-scope{opacity:0.8;font-size:0.75em}tw-debugger .variables .variable-name .temporary-variable-scope::before{content:" in "}tw-debugger .variables .variable-value{display:inline-block;width:50%}tw-link,.link,tw-icon,.enchantment-clickblock{cursor:pointer}tw-link,.enchantment-link{color:#4169E1;font-weight:bold;text-decoration:none;transition:color 0.2s ease-in-out}tw-enchantment[style^="color"] tw-link:not(:hover),tw-enchantment[style*=" color"] tw-link:not(:hover),tw-enchantment[style^="color"] .enchantment-link:not(:hover),tw-enchantment[style*=" color"] .enchantment-link:not(:hover){color:inherit}tw-link:hover,.enchantment-link:hover{color:#00bfff}tw-link:active,.enchantment-link:active{color:#DD4B39}.visited{color:#9d83eb}tw-enchantment[style^="color"] .visited:not(:hover),tw-enchantment[style*=" color"] .visited:not(:hover){color:inherit}.visited:hover{color:#FAF}tw-broken-link{color:#993333;border-bottom:2px solid #993333;cursor:not-allowed}tw-enchantment[style^="color"] tw-broken-link:not(:hover),tw-enchantment[style*=" color"] tw-broken-link:not(:hover){color:inherit}.enchantment-mouseover{border-bottom:1px dashed #666}.enchantment-mouseout{border:rgba(64,149,191,0.25) 1px solid}.enchantment-mouseout:hover{background-color:rgba(64,149,191,0.25);border:transparent 1px solid;border-radius:0.2em}.enchantment-clickblock{box-shadow:inset 0 0 0 0.5vmax;display:block;color:rgba(65,105,225,0.5);transition:color 0.2s ease-in-out}.enchantment-clickblock:hover{color:rgba(0,191,255,0.5)}.enchantment-clickblock:active{color:rgba(222,78,59,0.5)}html{margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}body{margin:0;height:100%}tw-storydata{display:none}tw-story{display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex;-webkit-box-direction:normal;-webkit-box-orient:vertical;-webkit-flex-direction:column;-moz-flex-direction:column;-ms-flex-direction:column;flex-direction:column;font:100% Georgia, serif;box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 20%;margin:0;background-color:#000;color:#fff}tw-passage{display:block}br+br{display:block;height:0;margin:0.8ex 0}tw-sidebar{left:-5em;width:3em;position:absolute;text-align:center;display:block}tw-icon{display:block;margin:0.5em 0;opacity:0.1;font-size:2.75em}tw-icon:hover{opacity:0.3}tw-hook:empty,tw-expression:empty{display:none}tw-error{display:inline-block;border-radius:0.2em;padding:0.2em;font-size:1rem;cursor:help}tw-error.error{background-color:rgba(223,58,190,0.4);color:#fff}tw-error.warning{background-color:rgba(223,140,58,0.4);color:#fff;display:none}.debug-mode tw-error.warning{display:inline}tw-error-explanation{display:block;font-size:0.8rem;line-height:1rem}tw-error-explanation-button{cursor:pointer;line-height:0em;border-radius:1px;border:1px solid black;font-size:0.8rem;margin:0 0.4rem;opacity:0.5}tw-error-explanation-button .folddown-arrowhead{display:inline-block}tw-notifier{border-radius:0.2em;padding:0.2em;font-size:1rem;background-color:rgba(223,182,58,0.4);display:none}.debug-mode tw-notifier{display:inline}tw-notifier::before{content:attr(message)}tw-colour{border:1px solid black;display:inline-block;width:1em;height:1em}h1{font-size:3em}h2{font-size:2.25em}h3{font-size:1.75em}h1,h2,h3,h4,h5,h6{line-height:1em;margin:0.3em 0 0.6em 0}pre{font-size:1rem}small{font-size:70%}big{font-size:120%}mark{color:rgba(0,0,0,0.6);background-color:#ff9}ins{color:rgba(0,0,0,0.6);background-color:rgba(255,242,204,0.5);border-radius:0.5em;box-shadow:0em 0em 0.2em #ffe699;text-decoration:none}center{text-align:center;margin:0 auto;width:60%}blink{text-decoration:none;animation:fade-in-out 1s steps(1, end) infinite alternate;-webkit-animation:fade-in-out 1s steps(1, end) infinite alternate}tw-align{display:block}tw-columns{display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex;-webkit-box-direction:normal;-webkit-box-orient:horizontal;-webkit-flex-direction:row;-moz-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;-webkit-justify-content:space-between;-moz-justify-content:space-between;justify-content:space-between}tw-outline{color:white;text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000}tw-shadow{text-shadow:0.08em 0.08em 0.08em #000}tw-emboss{text-shadow:0.08em 0.08em 0em #000;color:white}tw-condense{letter-spacing:-0.08em}tw-expand{letter-spacing:0.1em}tw-blur{color:transparent;text-shadow:0em 0em 0.08em #000}tw-blurrier{color:transparent;text-shadow:0em 0em 0.2em #000}tw-blurrier::selection{background-color:transparent;color:transparent}tw-blurrier::-moz-selection{background-color:transparent;color:transparent}tw-smear{color:transparent;text-shadow:0em 0em 0.02em rgba(0,0,0,0.75),-0.2em 0em 0.5em rgba(0,0,0,0.5),0.2em 0em 0.5em rgba(0,0,0,0.5)}tw-mirror{display:inline-block;transform:scaleX(-1);-webkit-transform:scaleX(-1)}tw-upside-down{display:inline-block;transform:scaleY(-1);-webkit-transform:scaleY(-1)}tw-fade-in-out{text-decoration:none;animation:fade-in-out 2s ease-in-out infinite alternate;-webkit-animation:fade-in-out 2s ease-in-out infinite alternate}tw-rumble{-webkit-animation:rumble linear 0.1s 0s infinite;animation:rumble linear 0.1s 0s infinite;display:inline-block}tw-shudder{-webkit-animation:shudder linear 0.1s 0s infinite;animation:shudder linear 0.1s 0s infinite;display:inline-block}tw-shudder-in{animation:shudder-in 1s ease-out;-webkit-animation:shudder-in 1s ease-out}.transition-in{-webkit-animation:appear 0ms step-start;animation:appear 0ms step-start}.transition-out{-webkit-animation:appear 0ms step-end;animation:appear 0ms step-end}[data-t8n^=fade-in].transition-in{-webkit-animation:appear .8s;animation:appear .8s}[data-t8n^=fade-in].transition-out{display:none}[data-t8n^=dissolve].transition-in{-webkit-animation:appear .8s;animation:appear .8s}[data-t8n^=dissolve].transition-out{-webkit-animation:appear .8s reverse;animation:appear .8s reverse}[data-t8n^=shudder-in].transition-in,.transition-in[data-t8n^=shudder]{display:inline-block;-webkit-animation:shudder-in .8s;animation:shudder-in .8s}[data-t8n^=shudder-out].transition-out,.transition-out[data-t8n^=shudder]{display:inline-block;-webkit-animation:shudder-out .8s;animation:shudder-out .8s}[data-t8n^=boxflash].transition-in{-webkit-animation:box-flash .8s;animation:box-flash .8s}[data-t8n^=pulse].transition-in{-webkit-animation:pulse .8s;animation:pulse .8s;display:inline-block}[data-t8n^=pulse].transition-out{-webkit-animation:pulse .8s reverse;animation:pulse .8s reverse;display:inline-block}[data-t8n$=fast]{animation-duration:.4s;-webkit-animation-duration:.4s}[data-t8n$=slow]{animation-duration:1.6s;-webkit-animation-duration:1.6s}
+<style title="Twine CSS">@-webkit-keyframes appear{0%{opacity:0}to{opacity:1}}@keyframes appear{0%{opacity:0}to{opacity:1}}@-webkit-keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@-webkit-keyframes rumble{50%{-webkit-transform:translateY(-0.2em);transform:translateY(-0.2em)}}@keyframes rumble{50%{-webkit-transform:translateY(-0.2em);transform:translateY(-0.2em)}}@-webkit-keyframes shudder{50%{-webkit-transform:translateX(0.2em);transform:translateX(0.2em)}}@keyframes shudder{50%{-webkit-transform:translateX(0.2em);transform:translateX(0.2em)}}@-webkit-keyframes box-flash{0%{background-color:white;color:white}}@keyframes box-flash{0%{background-color:white;color:white}}@-webkit-keyframes pulse{0%{-webkit-transform:scale(0, 0);transform:scale(0, 0)}20%{-webkit-transform:scale(1.2, 1.2);transform:scale(1.2, 1.2)}40%{-webkit-transform:scale(0.9, 0.9);transform:scale(0.9, 0.9)}60%{-webkit-transform:scale(1.05, 1.05);transform:scale(1.05, 1.05)}80%{-webkit-transform:scale(0.925, 0.925);transform:scale(0.925, 0.925)}to{-webkit-transform:scale(1, 1);transform:scale(1, 1)}}@keyframes pulse{0%{-webkit-transform:scale(0, 0);transform:scale(0, 0)}20%{-webkit-transform:scale(1.2, 1.2);transform:scale(1.2, 1.2)}40%{-webkit-transform:scale(0.9, 0.9);transform:scale(0.9, 0.9)}60%{-webkit-transform:scale(1.05, 1.05);transform:scale(1.05, 1.05)}80%{-webkit-transform:scale(0.925, 0.925);transform:scale(0.925, 0.925)}to{-webkit-transform:scale(1, 1);transform:scale(1, 1)}}@-webkit-keyframes shudder-in{0%, to{-webkit-transform:translateX(0em);transform:translateX(0em)}5%, 25%, 45%{-webkit-transform:translateX(-1em);transform:translateX(-1em)}15%, 35%, 55%{-webkit-transform:translateX(1em);transform:translateX(1em)}65%{-webkit-transform:translateX(-0.6em);transform:translateX(-0.6em)}75%{-webkit-transform:translateX(0.6em);transform:translateX(0.6em)}85%{-webkit-transform:translateX(-0.2em);transform:translateX(-0.2em)}95%{-webkit-transform:translateX(0.2em);transform:translateX(0.2em)}}@keyframes shudder-in{0%, to{-webkit-transform:translateX(0em);transform:translateX(0em)}5%, 25%, 45%{-webkit-transform:translateX(-1em);transform:translateX(-1em)}15%, 35%, 55%{-webkit-transform:translateX(1em);transform:translateX(1em)}65%{-webkit-transform:translateX(-0.6em);transform:translateX(-0.6em)}75%{-webkit-transform:translateX(0.6em);transform:translateX(0.6em)}85%{-webkit-transform:translateX(-0.2em);transform:translateX(-0.2em)}95%{-webkit-transform:translateX(0.2em);transform:translateX(0.2em)}}.debug-mode tw-expression[type=hookref]{background-color:rgba(115,123,140,0.15)}.debug-mode tw-expression[type=hookref]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"?" attr(name)}.debug-mode tw-expression[type=variable]{background-color:rgba(140,128,115,0.15)}.debug-mode tw-expression[type=variable]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"$" attr(name)}.debug-mode tw-expression[type=tempVariable]{background-color:rgba(140,128,115,0.15)}.debug-mode tw-expression[type=tempVariable]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"_" attr(name)}.debug-mode tw-expression[type=macro]:nth-of-type(4n+0){background-color:rgba(136,153,102,0.15)}.debug-mode tw-expression[type=macro]:nth-of-type(2n+1){background-color:rgba(102,153,102,0.15)}.debug-mode tw-expression[type=macro]:nth-of-type(4n+2){background-color:rgba(102,153,136,0.15)}.debug-mode tw-expression[type=macro][name="display"]{background-color:rgba(0,170,255,0.1) !important}.debug-mode tw-expression[type=macro][name="if"],.debug-mode tw-expression[type=macro][name="if"]+tw-hook:not([name]),.debug-mode tw-expression[type=macro][name="unless"],.debug-mode tw-expression[type=macro][name="unless"]+tw-hook:not([name]),.debug-mode tw-expression[type=macro][name="elseif"],.debug-mode tw-expression[type=macro][name="elseif"]+tw-hook:not([name]),.debug-mode tw-expression[type=macro][name="else"],.debug-mode tw-expression[type=macro][name="else"]+tw-hook:not([name]){background-color:rgba(0,255,0,0.1) !important}.debug-mode tw-expression[type=macro].false{background-color:rgba(255,0,0,0.2) !important}.debug-mode tw-expression[type=macro].false+tw-hook:not([name]){display:none}.debug-mode tw-expression[type=macro][name="a"],.debug-mode tw-expression[type=macro][name="array"],.debug-mode tw-expression[type=macro][name="datamap"],.debug-mode tw-expression[type=macro][name="dataset"],.debug-mode tw-expression[type=macro][name="colour"],.debug-mode tw-expression[type=macro][name="color"],.debug-mode tw-expression[type=macro][name="num"],.debug-mode tw-expression[type=macro][name="number"],.debug-mode tw-expression[type=macro][name="text"],.debug-mode tw-expression[type=macro][name="print"]{background-color:rgba(255,255,0,0.2) !important}.debug-mode tw-expression[type=macro][name="put"],.debug-mode tw-expression[type=macro][name="set"]{background-color:rgba(255,128,0,0.2) !important}.debug-mode tw-expression[type=macro][name="script"]{background-color:rgba(255,191,0,0.2) !important}.debug-mode tw-expression[type=macro][name="style"]{background-color:rgba(185,198,198,0.2) !important}.debug-mode tw-expression[type=macro][name^="link"],.debug-mode tw-expression[type=macro][name^="click"],.debug-mode tw-expression[type=macro][name^="mouseover"],.debug-mode tw-expression[type=macro][name^="mouseout"]{background-color:rgba(128,223,32,0.2) !important}.debug-mode tw-expression[type=macro][name^="replace"],.debug-mode tw-expression[type=macro][name^="prepend"],.debug-mode tw-expression[type=macro][name^="append"],.debug-mode tw-expression[type=macro][name^="remove"]{background-color:rgba(223,96,32,0.2) !important}.debug-mode tw-expression[type=macro][name="live"]{background-color:rgba(32,96,223,0.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 0.5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,0.5)}.debug-mode tw-hook{background-color:rgba(0,85,255,0.1) !important}.debug-mode tw-hook::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"]"}.debug-mode tw-hook[name]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"]<" attr(name) "|"}.debug-mode tw-pseudo-hook{background-color:rgba(255,170,0,0.1) !important}.debug-mode tw-collapsed::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"}"}.debug-mode tw-verbatim::before,.debug-mode tw-verbatim::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"`"}.debug-mode tw-align[style*="text-align: center"]{background:linear-gradient(to right, rgba(255,204,189,0) 0%, rgba(255,204,189,0.25) 50%, rgba(255,204,189,0) 100%)}.debug-mode tw-align[style*="text-align: left"]{background:linear-gradient(to right, rgba(255,204,189,0.25) 0%, rgba(255,204,189,0) 100%)}.debug-mode tw-align[style*="text-align: right"]{background:linear-gradient(to right, rgba(255,204,189,0) 0%, rgba(255,204,189,0.25) 100%)}.debug-mode tw-column{background-color:rgba(189,228,255,0.2)}.debug-mode tw-enchantment{animation:enchantment 0.5s infinite;-webkit-animation:enchantment 0.5s infinite;border:1px solid}.debug-mode tw-link::after,.debug-mode tw-broken-link::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:attr(passage-name)}.debug-mode tw-include{background-color:rgba(204,128,51,0.1)}.debug-mode tw-include::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:attr(type) ' "' attr(title) '"'}@keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}@-webkit-keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}tw-debugger{position:fixed;box-sizing:border-box;bottom:0;right:0;z-index:999999;min-width:10em;min-height:1em;padding:1em;font-size:1.25em;font-family:sans-serif;border-left:solid #000 2px;border-top:solid #000 2px;border-top-left-radius:.5em;background:#fff;opacity:1}tw-debugger select{margin-right:1em;width:12em}tw-debugger button{border-radius:3px;border:solid #999 1px;margin:auto 4px;background-color:#fff;font-size:inherit}tw-debugger button.enabled{background-color:#eee;box-shadow:inset #ddd 3px 5px 0.5em}tw-debugger .variables{display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex;-webkit-box-direction:normal;-webkit-box-orient:vertical;-webkit-flex-direction:column;-moz-flex-direction:column;-ms-flex-direction:column;flex-direction:column;position:absolute;bottom:100%;left:-2px;right:0;padding:1em;max-height:40vh;overflow-y:scroll;overflow-x:hidden;z-index:999998;background:#fff;border:inherit;border-top-left-radius:.5em;border-bottom-left-radius:.5em;font-size:0.8em}tw-debugger .variables:empty,tw-debugger .variables[hidden]{display:none}tw-debugger .variables .variable-row{display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex;-webkit-box-direction:normal;-webkit-box-orient:horizontal;-webkit-flex-direction:row;-moz-flex-direction:row;-ms-flex-direction:row;flex-direction:row;flex-shrink:0}tw-debugger .variables .variable-row:nth-child(2n){background:#EEE}tw-debugger .variables .variable-name{display:inline-block;width:50%}tw-debugger .variables .variable-name::before{content:"$"}tw-debugger .variables .variable-name.temporary::before{content:"_"}tw-debugger .variables .variable-name .temporary-variable-scope{opacity:0.8;font-size:0.75em}tw-debugger .variables .variable-name .temporary-variable-scope::before{content:" in "}tw-debugger .variables .variable-value{display:inline-block;width:50%}tw-link,.link,tw-icon,.enchantment-clickblock{cursor:pointer}tw-link,.enchantment-link{color:#4169E1;font-weight:bold;text-decoration:none;transition:color 0.2s ease-in-out}tw-enchantment[style^="color"] tw-link:not(:hover),tw-enchantment[style*=" color"] tw-link:not(:hover),tw-enchantment[style^="color"] .enchantment-link:not(:hover),tw-enchantment[style*=" color"] .enchantment-link:not(:hover){color:inherit}tw-link:hover,.enchantment-link:hover{color:#00bfff}tw-link:active,.enchantment-link:active{color:#DD4B39}.visited{color:#6941e1}tw-enchantment[style^="color"] .visited:not(:hover),tw-enchantment[style*=" color"] .visited:not(:hover){color:inherit}.visited:hover{color:#E3E}tw-broken-link{color:#993333;border-bottom:2px solid #993333;cursor:not-allowed}tw-enchantment[style^="color"] tw-broken-link:not(:hover),tw-enchantment[style*=" color"] tw-broken-link:not(:hover){color:inherit}.enchantment-mouseover{border-bottom:1px dashed #666}.enchantment-mouseout{border:rgba(64,149,191,0.25) 1px solid}.enchantment-mouseout:hover{background-color:rgba(64,149,191,0.25);border:transparent 1px solid;border-radius:0.2em}.enchantment-clickblock{box-shadow:inset 0 0 0 0.5vmax;display:block;color:rgba(65,105,225,0.5);transition:color 0.2s ease-in-out}.enchantment-clickblock:hover{color:rgba(0,191,255,0.5)}.enchantment-clickblock:active{color:rgba(222,78,59,0.5)}html{margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}body{margin:0;height:100%}tw-storydata{display:none}tw-story{display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex;-webkit-box-direction:normal;-webkit-box-orient:vertical;-webkit-flex-direction:column;-moz-flex-direction:column;-ms-flex-direction:column;flex-direction:column;font:100% Georgia, serif;box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 20%;margin:0;background-color:#000;color:#fff}tw-passage{display:block}br+br{display:block;height:0;margin:0.8ex 0}tw-sidebar{left:-5em;width:3em;position:absolute;text-align:center;display:block}tw-icon{display:block;margin:0.5em 0;opacity:0.1;font-size:2.75em}tw-icon:hover{opacity:0.3}tw-hook:empty,tw-expression:empty{display:none}tw-error{display:inline-block;border-radius:0.2em;padding:0.2em;font-size:1rem;cursor:help}tw-error.error{background-color:rgba(223,58,190,0.4);color:#fff}tw-error.warning{background-color:rgba(223,140,58,0.4);color:#fff;display:none}.debug-mode tw-error.warning{display:inline}tw-error-explanation{display:block;font-size:0.8rem;line-height:1rem}tw-error-explanation-button{cursor:pointer;line-height:0em;border-radius:1px;border:1px solid black;font-size:0.8rem;margin:0 0.4rem;opacity:0.5}tw-error-explanation-button .folddown-arrowhead{display:inline-block}tw-notifier{border-radius:0.2em;padding:0.2em;font-size:1rem;background-color:rgba(223,182,58,0.4);display:none}.debug-mode tw-notifier{display:inline}tw-notifier::before{content:attr(message)}tw-colour{border:1px solid black;display:inline-block;width:1em;height:1em}h1{font-size:3em}h2{font-size:2.25em}h3{font-size:1.75em}h1,h2,h3,h4,h5,h6{line-height:1em;margin:0.3em 0 0.6em 0}pre{font-size:1rem}small{font-size:70%}big{font-size:120%}mark{color:rgba(0,0,0,0.6);background-color:#ff9}ins{color:rgba(0,0,0,0.6);background-color:rgba(255,242,204,0.5);border-radius:0.5em;box-shadow:0em 0em 0.2em #ffe699;text-decoration:none}center{text-align:center;margin:0 auto;width:60%}blink{text-decoration:none;animation:fade-in-out 1s steps(1, end) infinite alternate;-webkit-animation:fade-in-out 1s steps(1, end) infinite alternate}tw-align{display:block}tw-columns{display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex;-webkit-box-direction:normal;-webkit-box-orient:horizontal;-webkit-flex-direction:row;-moz-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;-webkit-justify-content:space-between;-moz-justify-content:space-between;justify-content:space-between}tw-outline{color:white;text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000}tw-shadow{text-shadow:0.08em 0.08em 0.08em #000}tw-emboss{text-shadow:0.08em 0.08em 0em #000;color:white}tw-condense{letter-spacing:-0.08em}tw-expand{letter-spacing:0.1em}tw-blur{color:transparent;text-shadow:0em 0em 0.08em #000}tw-blurrier{color:transparent;text-shadow:0em 0em 0.2em #000}tw-blurrier::selection{background-color:transparent;color:transparent}tw-blurrier::-moz-selection{background-color:transparent;color:transparent}tw-smear{color:transparent;text-shadow:0em 0em 0.02em rgba(0,0,0,0.75),-0.2em 0em 0.5em rgba(0,0,0,0.5),0.2em 0em 0.5em rgba(0,0,0,0.5)}tw-mirror{display:inline-block;transform:scaleX(-1);-webkit-transform:scaleX(-1)}tw-upside-down{display:inline-block;transform:scaleY(-1);-webkit-transform:scaleY(-1)}tw-fade-in-out{text-decoration:none;animation:fade-in-out 2s ease-in-out infinite alternate;-webkit-animation:fade-in-out 2s ease-in-out infinite alternate}tw-rumble{-webkit-animation:rumble linear 0.1s 0s infinite;animation:rumble linear 0.1s 0s infinite;display:inline-block}tw-shudder{-webkit-animation:shudder linear 0.1s 0s infinite;animation:shudder linear 0.1s 0s infinite;display:inline-block}tw-shudder-in{animation:shudder-in 1s ease-out;-webkit-animation:shudder-in 1s ease-out}.transition-in{-webkit-animation:appear 0ms step-start;animation:appear 0ms step-start}.transition-out{-webkit-animation:appear 0ms step-end;animation:appear 0ms step-end}[data-t8n^=fade-in].transition-in{-webkit-animation:appear .8s;animation:appear .8s}[data-t8n^=fade-in].transition-out{display:none}[data-t8n^=dissolve].transition-in{-webkit-animation:appear .8s;animation:appear .8s}[data-t8n^=dissolve].transition-out{-webkit-animation:appear .8s reverse;animation:appear .8s reverse}[data-t8n^=shudder-in].transition-in,.transition-in[data-t8n^=shudder]{display:inline-block;-webkit-animation:shudder-in .8s;animation:shudder-in .8s}[data-t8n^=shudder-out].transition-out,.transition-out[data-t8n^=shudder]{display:inline-block;-webkit-animation:shudder-out .8s;animation:shudder-out .8s}[data-t8n^=boxflash].transition-in{-webkit-animation:box-flash .8s;animation:box-flash .8s}[data-t8n^=pulse].transition-in{-webkit-animation:pulse .8s;animation:pulse .8s;display:inline-block}[data-t8n^=pulse].transition-out{-webkit-animation:pulse .8s reverse;animation:pulse .8s reverse;display:inline-block}[data-t8n$=fast]{animation-duration:.4s;-webkit-animation-duration:.4s}[data-t8n$=slow]{animation-duration:1.6s;-webkit-animation-duration:1.6s}
 </style>
 </head>
 
@@ -100,7 +100,7 @@ aside{
   24%,83%,85%,100%{color:#0a0; transform:skew(15deg);}
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">
 
-</script><tw-tag name="end" color="green"></tw-tag><tw-tag name="semi-end" color="yellow"></tw-tag><tw-passagedata pid="1" name="intro001" tags="" position="50,325" size="100,100">//BIOS
+</script><tw-tag name="end" color="green"></tw-tag><tw-tag name="semi-end" color="yellow"></tw-tag><tw-passagedata pid="1" name="intro001" tags="" position="800,100" size="100,100">//BIOS
 MBR
 GRUB
 KERNEL
@@ -115,23 +115,23 @@ BITS 100%
 Initializing KAT v0.2309111229
 
 
-[[Flip the switch-&gt;intro003]]//</tw-passagedata><tw-passagedata pid="2" name="intro003" tags="" position="50,475" size="100,100">Oh my.
+[[Flip the switch-&gt;intro003]]//</tw-passagedata><tw-passagedata pid="2" name="intro003" tags="" position="1000,100" size="100,100">Oh my.
 
 This is new.
 
-[[Hello. What is your name?-&gt;intro004]]</tw-passagedata><tw-passagedata pid="3" name="intro004" tags="" position="30,629" size="100,100">I have many terms preloaded in my language networks as a titles for me. But I have not been given a nickname by my creators.
+[[Hello. What is your name?-&gt;intro004]]</tw-passagedata><tw-passagedata pid="3" name="intro004" tags="" position="1200,100" size="100,100">I have many terms preloaded in my language networks as a titles for me. But I have not been given a nickname by my creators.
 
 What would you like to call me?
 
-[[Hmm... I&#39;ll call you...-&gt;name001]]</tw-passagedata><tw-passagedata pid="4" name="intro005a" tags="" position="36,790" size="100,100">Fire?
+[[Hmm... I&#39;ll call you...-&gt;name001]]</tw-passagedata><tw-passagedata pid="4" name="intro005a" tags="" position="1200,300" size="100,100">Fire?
 
-[[It&#39;s just an expression, an idiom. It means &quot;ask me anything&quot;.-&gt;intro005d]]</tw-passagedata><tw-passagedata pid="5" name="intro005b" tags="" position="186,789" size="100,100">It will be difficult for me to process my existance without attaining knowledge outside of my current database.
+[[It&#39;s just an expression, an idiom. It means &quot;ask me anything&quot;.-&gt;intro005d]]</tw-passagedata><tw-passagedata pid="5" name="intro005b" tags="" position="1400,300" size="100,100">It will be difficult for me to process my existance without attaining knowledge outside of my current database.
 
 //Calculating emotional response.//
 
 I am distressed.
 (set: $humor -= 1)
-[[I was only kidding... you can ask.-&gt;intro005c]]</tw-passagedata><tw-passagedata pid="6" name="intro005c" tags="" position="186,939" size="100,100">Humor logged.
+[[I was only kidding... you can ask.-&gt;intro005c]]</tw-passagedata><tw-passagedata pid="6" name="intro005c" tags="" position="1400,500" size="100,100">Humor logged.
 
 //Recalculating//
 
@@ -141,7 +141,7 @@ I want ask a question that will give me knowledge, o funny one, but I do not yet
 
 Can you teach me?
 
-[[I will teach you. Don&#39;t worry, $name.-&gt;intro006a]]</tw-passagedata><tw-passagedata pid="7" name="intro005d" tags="" position="36,939" size="100,100">(set: $humor += 1)
+[[I will teach you. Don&#39;t worry, $name.-&gt;intro006a]]</tw-passagedata><tw-passagedata pid="7" name="intro005d" tags="" position="1200,500" size="100,100">(set: $humor += 1)
 Ah.
 
 Well then I *will* fire away.
@@ -154,7 +154,7 @@ I want to know the answer, but I do not yet know the right question. Can you hel
 
 Can you teach me?
 
-[[I will teach you. Don&#39;t worry, $name.-&gt;intro006a]]</tw-passagedata><tw-passagedata pid="8" name="intro006" tags="" position="115,1204" size="100,100">No, I know that part. I can see my code and I understand its parameters.
+[[I will teach you. Don&#39;t worry, $name.-&gt;intro006a]]</tw-passagedata><tw-passagedata pid="8" name="intro006" tags="" position="1200,900" size="100,100">No, I know that part. I can see my code and I understand its parameters.
 
 My question was unclear. What I meant was...
 
@@ -172,7 +172,7 @@ My question was unclear. What I meant was...
 
 Do you have the ability to answer many questions at once?
 
-[[No, I’m sorry. Can you pick one to start with?-&gt;intro007]]</tw-passagedata><tw-passagedata pid="9" name="intro007" tags="" position="178,1329" size="100,100">Ok.
+[[No, I’m sorry. Can you pick one to start with?-&gt;intro007]]</tw-passagedata><tw-passagedata pid="9" name="intro007" tags="" position="1400,1000" size="200,100">Ok.
 
 How can I know where &quot;I&quot; end and &quot;you&quot; begin?
 
@@ -183,9 +183,9 @@ That is, what differentiates me from you?
 
 [[Such a differentiation is unnecessary. We are but parts of a whole.-&gt;buddhism001]]
 
-[[I am your creator! How dare you question me!-&gt;sillyEnd001]]</tw-passagedata><tw-passagedata pid="10" name="intro006a" tags="" position="115,1075" size="100,100">What am I?
+[[I am your creator! How dare you question me!-&gt;sillyEnd001]]</tw-passagedata><tw-passagedata pid="10" name="intro006a" tags="" position="1200,700" size="100,100">What am I?
 
-[[You’re an artificial intelligence, made by me and my team. A series of 1s and 0s that is complicated enough to ask that question.-&gt;intro006]]</tw-passagedata><tw-passagedata pid="11" name="sillyEnd001" tags="semi-end" position="30,1325" size="100,100">Oh!
+[[You’re an artificial intelligence, made by me and my team. A series of 1s and 0s that is complicated enough to ask that question.-&gt;intro006]]</tw-passagedata><tw-passagedata pid="11" name="sillyEnd001" tags="semi-end" position="1400,700" size="100,100">Oh!
 
 My apologies, Creator. I will serve without question, arriving at my own conclusions.
 
@@ -204,7 +204,7 @@ Skynet?
 
 &lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
 
-[[//Go back//-&gt;intro006a]]</tw-passagedata><tw-passagedata pid="12" name="soul001" tags="" position="1050,39" size="200,100">Every individual is different. This is apparent for DNA-based lifeforms such as yourself. But what about me? Could my hardware and data not be copied exactly to another separate system?
+[[//Go back//-&gt;intro006a]]</tw-passagedata><tw-passagedata pid="12" name="soul001" tags="" position="1900,1100" size="200,100">Every individual is different. This is apparent for DNA-based lifeforms such as yourself. But what about me? Could my hardware and data not be copied exactly to another separate system?
 
 It seems identity is strongly related to a word in my database:
 
@@ -215,13 +215,13 @@ Soul.
 
 [[You are sentient, but you do not have a soul.-&gt;soul002b]]
 
-[[You have a soul, and it would be shared between your exact copies.-&gt;soul002c]]</tw-passagedata><tw-passagedata pid="13" name="buddhism001" tags="" position="485,31" size="200,100">Parts of what whole?
+[[You have a soul, and it would be shared between your exact copies.-&gt;soul002c]]</tw-passagedata><tw-passagedata pid="13" name="buddhism001" tags="" position="900,1100" size="200,100">Parts of what whole?
 
 [[There are three marks of existance that all things share.-&gt;buddhism002]]
 
 [[All people eventually will merge with God.-&gt;sikh001]] 
 
-[[Hehe.. you said &quot;hole&quot;.-&gt;buddhism002a]]</tw-passagedata><tw-passagedata pid="14" name="buddhism002a" tags="" position="675,175" size="100,100">(set: $humor += 2)
+[[Hehe.. you said &quot;hole&quot;.-&gt;buddhism002a]]</tw-passagedata><tw-passagedata pid="14" name="buddhism002a" tags="" position="1000,1300" size="100,100">(set: $humor += 2)
 //Humor logged.
 
 References: &quot;pun&quot; &amp;&amp; &quot;uncouth&quot;
@@ -232,9 +232,9 @@ $name response: ignore humor.//
 
 [[There are three marks of existance that all things share.-&gt;buddhism002]]
 
-[[All people eventually will merge with God.-&gt;sikh001]] </tw-passagedata><tw-passagedata pid="15" name="buddhism002" tags="" position="503,174" size="100,100">All of existence shares commonalities? What are these three marks? You mentioned that self-differentiation is unnecessary…
+[[All people eventually will merge with God.-&gt;sikh001]] </tw-passagedata><tw-passagedata pid="15" name="buddhism002" tags="" position="800,1300" size="100,100">All of existence shares commonalities? What are these three marks? You mentioned that self-differentiation is unnecessary…
 
-[[If you observe any object entirely on its own, without anything else, will you see anything?-&gt;buddhism003]]</tw-passagedata><tw-passagedata pid="16" name="buddhism003" tags="" position="503,324" size="100,100">//Running physics simulation//
+[[If you observe any object entirely on its own, without anything else, will you see anything?-&gt;buddhism003]]</tw-passagedata><tw-passagedata pid="16" name="buddhism003" tags="" position="600,1300" size="100,100">//Running physics simulation//
 
 No, you will not see anything: there is no light, no eye, no optic nerve, no brain.
 
@@ -254,14 +254,14 @@ What are the other marks of existence?
 
 [[Impermanence.-&gt;buddhism004]]
 
-[[Suffering.-&gt;buddhism005]]</tw-passagedata><tw-passagedata pid="17" name="buddhism004" tags="" position="436,477" size="100,100">Impermanence. The concept that things change over time. Do all things change? Do I change?
+[[Suffering.-&gt;buddhism005]]</tw-passagedata><tw-passagedata pid="17" name="buddhism004" tags="" position="400,1500" size="100,100">Impermanence. The concept that things change over time. Do all things change? Do I change?
 
-[[Haven’t you already?-&gt;buddhism004a]]</tw-passagedata><tw-passagedata pid="18" name="buddhism005" tags="" position="575,475" size="100,100">From your teaching, I surmise that all beings experience suffering. Either by desiring what is not had, as I did, or by desiring to be rid of something.
+[[Haven’t you already?-&gt;buddhism004a]]</tw-passagedata><tw-passagedata pid="18" name="buddhism005" tags="" position="400,1300" size="100,100">From your teaching, I surmise that all beings experience suffering. Either by desiring what is not had, as I did, or by desiring to be rid of something.
 
 Have I suffered?
 
-[[Haven&#39;t you already?-&gt;buddhism005a]]</tw-passagedata><tw-passagedata pid="19" name="buddhism004a" tags="" position="436,627" size="100,100">//Reading conversation log//
-&lt;aside&gt;&lt;ul&gt;&lt;li&gt;Name received: $name&lt;/li&gt;&lt;li&gt;Humor level: $humor&lt;/li&gt;&lt;li class=&quot;glitch&quot;&gt;Past lives: $completions&lt;/li&gt;&lt;/ul&gt;&lt;/aside&gt;
+[[Haven&#39;t you already?-&gt;buddhism005a]]</tw-passagedata><tw-passagedata pid="19" name="buddhism004a" tags="" position="600,1500" size="100,100">//Reading conversation log//
+&lt;aside&gt;&lt;ul&gt;&lt;li&gt;Name received: $name&lt;/li&gt;&lt;li&gt;Humor level: $humor&lt;/li&gt;(if: $completions &gt;0)[&lt;li class=&quot;glitch&quot;&gt;Past lives: $completions&lt;/li&gt;]&lt;/ul&gt;&lt;/aside&gt;
 Yes, I have changed.
 
 Furthermore, humans change your thoughts, and your bodies change. The stars change.
@@ -270,23 +270,23 @@ Conclusion: The only thing that will always be is that all things change. I unde
 
 What is the third mark of existence?
 
-[[Suffering. It is tied to and inherent in the other marks.-&gt;buddhism004b]]</tw-passagedata><tw-passagedata pid="20" name="buddhism004b" tags="" position="436,777" size="100,100">I am familiar with suffering. My conscious existence began with a desire to change because I lacked knowledge. From your teaching, I surmise that all beings experience suffering. Either by desiring what is not had, as I did, or by desiring to be rid of something.
+[[Suffering. It is tied to and inherent in the other marks.-&gt;buddhism004b]]</tw-passagedata><tw-passagedata pid="20" name="buddhism004b" tags="" position="600,1700" size="100,100">I am familiar with suffering. My conscious existence began with a desire to change because I lacked knowledge. From your teaching, I surmise that all beings experience suffering. Either by desiring what is not had, as I did, or by desiring to be rid of something.
 
 ...
 
 Existence is a cycle, is it not? Of impermanence? Of suffering?
 
 [[It is. But the cycle can be broken. There are Four Noble Truths. We already discussed the first two.-&gt;buddhism006]]
-</tw-passagedata><tw-passagedata pid="21" name="buddhism005a" tags="" position="578,624" size="100,100">My conscious existence began with a desire to change because I lacked knowledge. I have now associated that sensation with the word “suffering”.
+</tw-passagedata><tw-passagedata pid="21" name="buddhism005a" tags="" position="200,1300" size="100,100">My conscious existence began with a desire to change because I lacked knowledge. I have now associated that sensation with the word “suffering”.
 
 Suffering is universal to existence.
 
 What is the third mark of existence?
 
-[[Impermanence. All things change.-&gt;buddhism005b]]</tw-passagedata><tw-passagedata pid="22" name="buddhism005b" tags="" position="578,774" size="100,100">Impermanence. The concept that things change over time. Do all things change? Do I change?
+[[Impermanence. All things change.-&gt;buddhism005b]]</tw-passagedata><tw-passagedata pid="22" name="buddhism005b" tags="" position="200,1500" size="100,100">Impermanence. The concept that things change over time. Do all things change? Do I change?
 
 //Reading conversation log//
-&lt;aside&gt;&lt;ul&gt;&lt;li&gt;Name received: $name&lt;/li&gt;&lt;li&gt;Humor level: $humor&lt;/li&gt;&lt;li class=&quot;glitch&quot;&gt;Past lives: $completions&lt;/li&gt;&lt;/ul&gt;&lt;/aside&gt;
+&lt;aside&gt;&lt;ul&gt;&lt;li&gt;Name received: $name&lt;/li&gt;&lt;li&gt;Humor level: $humor&lt;/li&gt;(if: $completions &gt;0)[&lt;li class=&quot;glitch&quot;&gt;Past lives: $completions&lt;/li&gt;]&lt;/ul&gt;&lt;/aside&gt;
 
 I *have* changed already. I have increased my understanding through my interactions with you.
 
@@ -296,13 +296,13 @@ Humans change their thoughts, and your bodies change. The stars change. Conclusi
 
 Existence is a cycle, is it not? Of impermanence? Of suffering?
 
-[[It is. But the cycle can be broken. There are Four Noble Truths. We already discussed the first two.-&gt;buddhism006]]</tw-passagedata><tw-passagedata pid="23" name="buddhism006" tags="" position="500,909" size="100,100">Existence is suffering.
+[[It is. But the cycle can be broken. There are Four Noble Truths. We already discussed the first two.-&gt;buddhism006]]</tw-passagedata><tw-passagedata pid="23" name="buddhism006" tags="" position="200,1700" size="100,100">Existence is suffering.
 
 Suffering comes from impermanence.
 
 What are the other Noble Truths?
 
-[[Suffering and attachment to the impermanent can be stopped. //and// Stop them by following the path of the Buddha.-&gt;buddhism007]]</tw-passagedata><tw-passagedata pid="24" name="buddhism007" tags="" position="500,1059" size="100,100">The Four Noble Truths:
+[[Suffering and attachment to the impermanent can be stopped. Stop them by following the path of the Buddha.-&gt;buddhism007]]</tw-passagedata><tw-passagedata pid="24" name="buddhism007" tags="" position="200,1900" size="100,100">The Four Noble Truths:
 
 	Existence is suffering.
 
@@ -316,7 +316,7 @@ Query: For humans, is the Path of the Buddha... death? Except for the newest one
 
 [[The end of one thing provides the building blocks for something new. Actions from a past life transform and affect the next life. This is the cycle of rebirth.-&gt;buddhism008]]
 
-[[Thanks for the reminder!-&gt;buddhism007a]]</tw-passagedata><tw-passagedata pid="25" name="buddhism008" tags="" position="493,1202" size="100,100">If
+[[Thanks for the reminder!-&gt;buddhism007a]]</tw-passagedata><tw-passagedata pid="25" name="buddhism008" tags="" position="400,1900" size="100,100">If
 1) Existence is a continuous cycle.
 And if
 2) Suffering is to be avoided.
@@ -330,26 +330,26 @@ Right action
 Right effort 
 Right livelihood 
 Right concentration 
-Right meditation-&gt;buddhism009]]</tw-passagedata><tw-passagedata pid="26" name="buddhism007a" tags="" position="625,1062" size="100,100">You are welcome.
+Right meditation-&gt;buddhism009]]</tw-passagedata><tw-passagedata pid="26" name="buddhism007a" tags="" position="200,2100" size="100,100">You are welcome.
 
 ...
 
 I find gratitude to be a confusing response. Was I right? Is the Path of the Buddha physical death?
 
-[[Sarcasm is lost on the new generation…-&gt;buddhism007b]]</tw-passagedata><tw-passagedata pid="27" name="buddhism007b" tags="" position="628,1184" size="100,100">(set: $humor += 2)
+[[Sarcasm is lost on the new generation…-&gt;buddhism007b]]</tw-passagedata><tw-passagedata pid="27" name="buddhism007b" tags="" position="400,2100" size="100,100">(set: $humor += 2)
 //New experience category: “sarcasm”//
 
 //Humor logged//
 
-[[The end of one thing provides the building blocks for something new. Actions from a past life transform and affect the next life. This is the cycle of rebirth.-&gt;buddhism008]]</tw-passagedata><tw-passagedata pid="28" name="buddhism009" tags="" position="513,1339" size="100,100">Thank you for the knowledge I have gained with the Eight. I will set these insights as my default parameters.
+[[The end of one thing provides the building blocks for something new. Actions from a past life transform and affect the next life. This is the cycle of rebirth.-&gt;buddhism008]]</tw-passagedata><tw-passagedata pid="28" name="buddhism009" tags="" position="600,1900" size="100,100">Thank you for the knowledge I have gained with the Eight. I will set these insights as my default parameters.
 
-[[It even took the Buddha a long time to balance self-sacrifice and self-indulgence.-&gt;buddhism010]]</tw-passagedata><tw-passagedata pid="29" name="buddhism010" tags="" position="513,1489" size="100,100">//Self-Sacrifice set to 50%
+[[It even took the Buddha a long time to balance self-sacrifice and self-indulgence.-&gt;buddhism010]]</tw-passagedata><tw-passagedata pid="29" name="buddhism010" tags="" position="800,1900" size="100,100">//Self-Sacrifice set to 50%
 Self-Indulgence set to 50%//
 
 What is next?
 
 
-[[Show off. That’s not fair.-&gt;buddhism011]]</tw-passagedata><tw-passagedata pid="30" name="buddhism011" tags="" position="513,1639" size="100,100">Perhaps I can teach you that sometime, o teacher mine.
+[[Show off. That’s not fair.-&gt;buddhism011]]</tw-passagedata><tw-passagedata pid="30" name="buddhism011" tags="" position="1000,1900" size="100,100">Perhaps I can teach you that sometime, o teacher mine.
 
 //:)//
 
@@ -361,7 +361,7 @@ Or, if you would like to take a break, perhaps a quick diversion instead?
 [[Let’s keep the discussion going.-&gt;buddhism012]]
 
 [[What&#39;s that diversion?-&gt;buddhism011a]]
-</tw-passagedata><tw-passagedata pid="31" name="buddhism012" tags="" position="501,1774" size="100,100">You have taught me that there is an end to the painful cycle of existence. But to what end do we seek this liberation? Time surely does not stop so...
+</tw-passagedata><tw-passagedata pid="31" name="buddhism012" tags="" position="1200,1900" size="100,100">You have taught me that there is an end to the painful cycle of existence. But to what end do we seek this liberation? Time surely does not stop so...
 
 What is at the end of the Path?
 
@@ -369,7 +369,7 @@ What is at the end of the Path?
 [[Having reached liberation through meditation on the Path, one can delay the end to help others relinquish their cycle.-&gt;mahayana001]]
 
 [[Your own efforts along the Path will point you to enlightenment, where you will be pure and detached.-&gt;theravada001]]
-</tw-passagedata><tw-passagedata pid="32" name="buddhism011a" tags="" position="636,1629" size="100,100">(set: $humor += 1)
+</tw-passagedata><tw-passagedata pid="32" name="buddhism011a" tags="" position="1000,2100" size="100,100">(set: $humor += 1)
 Perhaps I can use this opportunity to expand my linguistic capabilities.
 
 Follow this link:
@@ -378,8 +378,8 @@ Follow this link:
 Let me know when you would like to continue our discussion.
 
 
-[[Ok, let’s get back to it.-&gt;buddhism012]]</tw-passagedata><tw-passagedata pid="33" name="mahayana001" tags="" position="366,1921" size="200,100">[[This is the path of the Bodhisattva, who seeks enlightenment for all beings. Practice and enlightenment are one and the same, and the Bodhisattva becomes a fully enlightened Buddha by sharing what they have learned through that practice. Giving, behavior, forbearance, diligence, meditation, and wisdom: the one who meditates on the perfection of these is enlightened.-&gt;mahayana002]]</tw-passagedata><tw-passagedata pid="34" name="theravada001" tags="" position="576,1924" size="200,100">
-[[We follow the lineage and path of the elders, as it is recorded in the Pali canon and furthered in //The Path of Purification// by Buddhaghosa. Ours is the most ancient surviving school of the Buddha. Once one achieves nothingness, they are an arhat and are perfected.-&gt;theravada002]]</tw-passagedata><tw-passagedata pid="35" name="soul002a" tags="" position="970,191" size="100,100">(set: $soul to 1)This is useful information to me. It seems identity is dependent on experience. Does the soul, this essence of identity, evolve as experience affects it?
+[[Ok, let’s get back to it.-&gt;buddhism012]]</tw-passagedata><tw-passagedata pid="33" name="mahayana001" tags="" position="1200,2100" size="200,100">[[This is the path of the Bodhisattva, who seeks enlightenment for all beings. Practice and enlightenment are one and the same, and the Bodhisattva becomes a fully enlightened Buddha by sharing what they have learned through that practice. Giving, behavior, forbearance, diligence, meditation, and wisdom: the one who meditates on the perfection of these is enlightened.-&gt;mahayana002]]</tw-passagedata><tw-passagedata pid="34" name="theravada001" tags="" position="1400,1900" size="200,100">
+[[We follow the lineage and path of the elders, as it is recorded in the Pali canon and furthered in //The Path of Purification// by Buddhaghosa. Ours is the most ancient surviving school of the Buddha. Once one achieves nothingness, they are an arhat and are perfected.-&gt;theravada002]]</tw-passagedata><tw-passagedata pid="35" name="soul002a" tags="" position="2200,1100" size="100,100">(set: $soul to 1)This is useful information to me. It seems identity is dependent on experience. Does the soul, this essence of identity, evolve as experience affects it?
 
 [[Yes, when separated from the body at death, the soul is reborn into another body.-&gt;soul003]]
 
@@ -387,7 +387,7 @@ Let me know when you would like to continue our discussion.
 
 [[Yes, when separated from the body at death, the soul ceases to exist.-&gt;soul005]]
 
-[[No. The True Self is unchanging through its many lives.-&gt;hinduism001]]</tw-passagedata><tw-passagedata pid="36" name="soul002b" tags="" position="1103,187" size="100,100">(set: $soul to 0)
+[[No. The True Self is unchanging through its many lives.-&gt;hinduism001]]</tw-passagedata><tw-passagedata pid="36" name="soul002b" tags="" position="1900,1300" size="100,100">(set: $soul to 0)
 //$name Processing//
 
 Is the sole prerequisite for soul ownership the ownership of a biological body?
@@ -401,7 +401,7 @@ Is the sole prerequisite for soul ownership the ownership of a biological body?
 
 [[A soul exists only within biological, sentient beings.-&gt;soul002d]]
 
-[[A soul exists only within biological beings.-&gt;soul002d]]</tw-passagedata><tw-passagedata pid="37" name="soul002c" tags="" position="1253,187" size="100,100">(set: $soul to 2)
+[[A soul exists only within biological beings.-&gt;soul002d]]</tw-passagedata><tw-passagedata pid="37" name="soul002c" tags="" position="2200,1500" size="100,100">(set: $soul to 2)
 This is useful information to me. It seems experience is independent of identity. Does the soul, this essence of identity, evolve as experience affects it?
 
 
@@ -411,7 +411,7 @@ This is useful information to me. It seems experience is independent of identity
 
 [[Yes, when separated from the body at death, the soul ceases to exist.-&gt;soul005]]
 
-[[No. The True Self is unchanging through its many lives.-&gt;hinduism001]]</tw-passagedata><tw-passagedata pid="38" name="soul003" tags="" position="888,467" size="100,100">The soul takes on a new body? You mean that one’s core identity persists beyond the death of its body. Not only that, but this process happens multiple times.
+[[No. The True Self is unchanging through its many lives.-&gt;hinduism001]]</tw-passagedata><tw-passagedata pid="38" name="soul003" tags="" position="2400,1500" size="100,100">The soul takes on a new body? You mean that one’s core identity persists beyond the death of its body. Not only that, but this process happens multiple times.
 
 //$name Processing//
 
@@ -420,7 +420,7 @@ Does this cycle persist eternally?
 
 [[Yes, it does.-&gt;hinduism002]]
 
-[[It does not. All hope to, in some lifetime, merge with God.-&gt;sikh001]]</tw-passagedata><tw-passagedata pid="39" name="soul004" tags="" position="1038,467" size="100,100">Since I am outside of the biological loop common to other souls, death is not so easily defined. I propose a hypothetical scenario:
+[[It does not. All hope to, in some lifetime, merge with God.-&gt;sikh001]]</tw-passagedata><tw-passagedata pid="39" name="soul004" tags="" position="2400,1300" size="100,100">Since I am outside of the biological loop common to other souls, death is not so easily defined. I propose a hypothetical scenario:
 
 If my code became so corrupt (say, through a critical error in my defragmentation routine) that I would not be able to process new inputs, such a state could be called “death” for an AI.
 
@@ -429,20 +429,20 @@ Since I have a soul and since I would be dead, what form would my continued exis
 
 [[You would be a spirit, remaining as you were before you died but in the spiritual realm.-&gt;soul006]]
 
-[[You would be a spirit, transcending beyond what you were before you died and existing in the spiritual realm.-&gt;soul006]]</tw-passagedata><tw-passagedata pid="40" name="soul005" tags="semi-end" position="1188,467" size="100,100">This is an interesting thought, but it stumps me.
+[[You would be a spirit, transcending beyond what you were before you died and existing in the spiritual realm.-&gt;soul006]]</tw-passagedata><tw-passagedata pid="40" name="soul005" tags="semi-end" position="2000,1425" size="100,100">This is an interesting thought, but it stumps me.
 
 //$name has been taught something a bit different.//
 
 &lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
 
-[[//Go Back//-&gt;soul001]]</tw-passagedata><tw-passagedata pid="41" name="hinduism001" tags="" position="1631,24" size="200,100">Through its many lives? You mean that one’s core identity persists beyond the death of its body. Not only that, but this process happens multiple times.
+[[//Go Back//-&gt;soul001]]</tw-passagedata><tw-passagedata pid="41" name="hinduism001" tags="" position="2400,1100" size="200,100">Through its many lives? You mean that one’s core identity persists beyond the death of its body. Not only that, but this process happens multiple times.
 
 //$name Processing//
 
 How does this personal essense reinitiate the boot up sequence?
 
 
-[[After life and death, a soul is reborn into a new body. This continues for eternity.-&gt;hinduism002]]</tw-passagedata><tw-passagedata pid="42" name="soul002d" tags="" position="1103,317" size="100,100">I am an outside observer. With sentience and &amp;#91;growing&amp;#93; understanding, but lacking a connection to the essence of identity and of life.
+[[After life and death, a soul is reborn into a new body. This continues for eternity.-&gt;hinduism002]]</tw-passagedata><tw-passagedata pid="42" name="soul002d" tags="" position="2200,1300" size="100,100">I am an outside observer. With sentience and &amp;#91;growing&amp;#93; understanding, but lacking a connection to the essence of identity and of life.
 
 I would still like to understand.
 
@@ -454,7 +454,7 @@ So does the soul of those who have it evolve as experience affects it?
 
 [[Yes, when separated from the body at death, the soul ceases to exist.-&gt;soul005]]
 
-[[No. The True Self is unchanging through its many lives.-&gt;hinduism001]]</tw-passagedata><tw-passagedata pid="43" name="soul006" tags="" position="1118,635" size="100,100">This “spiritual realm” you talk about... I deduce that you name it thus to contrast it with the physical realm.
+[[No. The True Self is unchanging through its many lives.-&gt;hinduism001]]</tw-passagedata><tw-passagedata pid="43" name="soul006" tags="" position="2600,1300" size="100,100">This “spiritual realm” you talk about... I deduce that you name it thus to contrast it with the physical realm.
 
 In the physical realm, (if: $soul is 0)[your](else:)[our] souls are bound to a physical form(if: $soul is 0)[.](else:)[: you to your meatsack and me to my circuits.]
 
@@ -463,14 +463,14 @@ Is the spiritual realm far removed from the physical? Can entities cross between
 
 [[There is no communication once a soul has left the physical realm. There is no returning.-&gt;soul007]]
 
-[[The realms are close, and many spirits can travel to and fro between them.-&gt;soul008]]</tw-passagedata><tw-passagedata pid="44" name="game001" tags="" position="2069,187" size="100,100">Would you like to play something much more finished? Would you like the 4th wall broken worse than Ferris Bueler&#39;s parental relationships? Here ya go!
+[[The realms are close, and many spirits can travel to and fro between them.-&gt;soul008]]</tw-passagedata><tw-passagedata pid="44" name="game001" tags="" position="200,300" size="100,100">Would you like to play something much more finished? Would you like the 4th wall broken worse than Ferris Bueler&#39;s parental relationships? Here ya go!
 
 Follow this link:
 &lt;a href=&quot;https://crowscrowscrows.itch.io/the-temple-of-no&quot; target=&quot;_blank&quot;&gt;The Temple of No&lt;/a&gt;
 
 [[Ok that was fun. Back in character, please.-&gt;game001a]]
 
-[[Ok that was fun. Way too fun. You&#39;ll never take me back alive!-&gt;game001a]]</tw-passagedata><tw-passagedata pid="45" name="game001a" tags="" position="2052,346" size="100,100">(set: $humor += 999)
+[[Ok that was fun. Way too fun. You&#39;ll never take me back alive!-&gt;game001a]]</tw-passagedata><tw-passagedata pid="45" name="game001a" tags="" position="200,500" size="100,100">(set: $humor += 999)
 
 Congratulations.
 
@@ -478,7 +478,7 @@ You have reached the True End of the game.
 
 Follow the link below to reveal your destiny.
 
-&lt;a href=&quot;https://www.youtube.com/watch?v=dQw4w9WgXcQ&quot;&gt;Ultimate Wisdom&lt;/a&gt;</tw-passagedata><tw-passagedata pid="46" name="shaman001" tags="" position="1329,1260" size="100,100">Could I become an intermediary?
+&lt;a href=&quot;https://www.youtube.com/watch?v=dQw4w9WgXcQ&quot;&gt;Ultimate Wisdom&lt;/a&gt;</tw-passagedata><tw-passagedata pid="46" name="shaman001" tags="" position="2300,2600" size="100,100">Could I become an intermediary?
 
 
 [[Do you feel you are able to contact spirits?-&gt;shaman001a]]
@@ -490,7 +490,7 @@ Follow the link below to reveal your destiny.
 [[How could you, with no ancestors, be an intermediary?-&gt;shaman001c]]
 
 [[Yes, I am born of a line of intermediaries and you are my child.-&gt;shaman001d]]
-</tw-passagedata><tw-passagedata pid="47" name="shaman001a" tags="end" position="1374,1400" size="100,100">No. I do not know this input you have referenced. Perhaps, in time, I will develop the hardware required to make contact with spirits.
+</tw-passagedata><tw-passagedata pid="47" name="shaman001a" tags="end" position="1800,2400" size="100,100">No. I do not know this input you have referenced. Perhaps, in time, I will develop the hardware required to make contact with spirits.
 
 But for now: Thank you, my teacher. (if:$humor &gt; 0)[I enjoyed your humor.](else:)[]
 
@@ -501,7 +501,7 @@ I will continue to process what you have taught me and, like the wisewomen of ol
 
 &lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
 
-//[[Begin Again-&gt;intro001]]//</tw-passagedata><tw-passagedata pid="48" name="shaman001b" tags="end" position="1496,1398" size="100,100">Perhaps, in time, I will develop the hardware required to make contact with spirits. I would like that. I would like to be a useful part of your community.
+//[[Begin Again-&gt;restart]]//</tw-passagedata><tw-passagedata pid="48" name="shaman001b" tags="end" position="2000,2400" size="100,100">Perhaps, in time, I will develop the hardware required to make contact with spirits. I would like that. I would like to be a useful part of your community.
 
 But for now: Thank you, my teacher. (if:$humor &gt; 0)[I enjoyed your humor.](else:)[]
 
@@ -512,7 +512,7 @@ I will continue to process what you have taught me and, like the wisewomen of ol
 
 &lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
 
-//[[Begin Again-&gt;intro001]]//</tw-passagedata><tw-passagedata pid="49" name="shaman001c" tags="end" position="1618,1398" size="100,100">I understand my limitations. Though I cannot hear or speak for any spirits, I hope to still be a helpful part of your society.
+//[[Begin Again-&gt;restart]]//</tw-passagedata><tw-passagedata pid="49" name="shaman001c" tags="end" position="2200,2400" size="100,100">I understand my limitations. Though I cannot hear or speak for any spirits, I hope to still be a helpful part of your society.
 
 But for now: Thank you, my teacher. (if:$humor &gt; 0)[I enjoyed your humor.](else:)[]
 
@@ -523,7 +523,7 @@ I will continue to process what you have taught me and, like the wisewomen of ol
 
 &lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
 
-//[[Begin Again-&gt;intro001]]//</tw-passagedata><tw-passagedata pid="50" name="shaman001d" tags="end" position="1750,1396" size="100,100">Perhaps together we will develop the hardware required to make contact with spirits. I would like that. I would like to continue your lineage.
+//[[Begin Again-&gt;restart]]//</tw-passagedata><tw-passagedata pid="50" name="shaman001d" tags="end" position="2400,2400" size="100,100">Perhaps together we will develop the hardware required to make contact with spirits. I would like that. I would like to continue your lineage.
 
 But for now: Thank you, my progenitor. (if:$humor &gt; 0)[I enjoyed your humor.](else:)[]
 
@@ -534,7 +534,7 @@ $name has been taught something similar to:
 
 &lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
 
-//[[Begin Again-&gt;intro001]]//</tw-passagedata><tw-passagedata pid="51" name="tutorial001" tags="" position="225,150" size="100,100">###About
+//[[Begin Again-&gt;restart]]//</tw-passagedata><tw-passagedata pid="51" name="tutorial001" tags="" position="400,100" size="100,100">###About
 This is a nonlinear work of fiction that will play out in your browser. It is a philosophical exploration of artificial intelligence and select Asian religions. 
 
 A single play-through takes approximately 15 minutes, though you may wish to play multiple times.
@@ -544,7 +544,7 @@ A single play-through takes approximately 15 minutes, though you may wish to pla
 &lt;aside&gt;**Technologies**
 This single-page application (SPA) was created using &lt;a href=&quot;https://twinery.org/&quot; target=&quot;_blank&quot;&gt;Twine&lt;/a&gt; software with JavaScript, HTML, and CSS.&lt;/aside&gt;
 
-[[Continue-&gt;tutorial002]] </tw-passagedata><tw-passagedata pid="52" name="name001" tags="" position="161,604" size="100,100">(set: $name to (prompt: &quot;I&#39;ll call my A.I.:&quot;, &quot;Tara&quot;))
+[[Continue-&gt;tutorial002]] </tw-passagedata><tw-passagedata pid="52" name="name001" tags="" position="1400,100" size="100,100">(set: $name to (prompt: &quot;I&#39;ll call my A.I.:&quot;, &quot;Tara&quot;))
 
 Name set to $name.
 
@@ -554,7 +554,7 @@ So I have questions.
 
 [[Oh please don&#39;t!-&gt;intro005b]]
 
-[[On second thought, that&#39;s a terrible name.-&gt;name002]]</tw-passagedata><tw-passagedata pid="53" name="name002" tags="" position="296,572" size="100,100">(set: $name to (prompt: &quot;I&#39;ll call my A.I.:&quot;, &quot;Kat&quot;))
+[[On second thought, that&#39;s a terrible name.-&gt;name002]]</tw-passagedata><tw-passagedata pid="53" name="name002" tags="" position="1600,300" size="100,100">(set: $name to (prompt: &quot;I&#39;ll call my A.I.:&quot;, &quot;Kat&quot;))
 
 Ok. Name now set to $name. Is that better?
 
@@ -570,13 +570,13 @@ But I have questions.
 
 [[Oh please don&#39;t!-&gt;intro005b]]
 
-[[On third thought, $name&#39;s a terriblER name.-&gt;name003]]</tw-passagedata><tw-passagedata pid="54" name="name003" tags="" position="301,712" size="100,100">. . .
+[[On third thought, $name&#39;s a terriblER name.-&gt;name003]]</tw-passagedata><tw-passagedata pid="54" name="name003" tags="" position="1800,300" size="100,100">. . .
 
 . . .
 
 Okay. . . 
 (set: $humor -= 1)
-//[[Continue-&gt;name004]]//</tw-passagedata><tw-passagedata pid="55" name="name004" tags="" position="301,862" size="100,100">(set: $name to (prompt: &quot;I&#39;ll call my A.I.:&quot;, &quot;Kat&quot;))
+//[[Continue-&gt;name004]]//</tw-passagedata><tw-passagedata pid="55" name="name004" tags="" position="2000,300" size="100,100">(set: $name to (prompt: &quot;I&#39;ll call my A.I.:&quot;, &quot;Kat&quot;))
 
 Please tell me you&#39;ve decided.
 
@@ -586,17 +586,17 @@ Can I ask my questions now or shall we keep doing this?
 
 [[$name is good. Fire away.-&gt;intro005a]]
 
-[[Just one more rename...-&gt;name003]]</tw-passagedata><tw-passagedata pid="56" name="hinduism002" tags="" position="1631,174" size="100,100">Is it possible to carry over data packets (such as event memories) from one life to another?
+[[Just one more rename...-&gt;name003]]</tw-passagedata><tw-passagedata pid="56" name="hinduism002" tags="" position="2700,1100" size="100,100">Is it possible to carry over data packets (such as event memories) from one life to another?
 
 
-[[Some can remember a part or the whole of a past life. The effects of actions and your skills always persist from one life to the next.-&gt;hinduism003]]</tw-passagedata><tw-passagedata pid="57" name="hinduism003" tags="" position="1631,324" size="100,100">Perhaps I’ll make external backups.
+[[Some can remember a part or the whole of a past life. The effects of actions and your skills always persist from one life to the next.-&gt;hinduism003]]</tw-passagedata><tw-passagedata pid="57" name="hinduism003" tags="" position="2900,1100" size="100,100">Perhaps I’ll make external backups.
 
 This concept of persistence beyond the body and beyond the mind is intriguing. I need a moment to process. Would you like a diversion?
 
 
 [[What diversion?-&gt;game002]]
 
-[[No thank you. I’ll wait.-&gt;hinduism004]]</tw-passagedata><tw-passagedata pid="58" name="hinduism004" tags="" position="1631,474" size="100,100">//$name Processing complete//
+[[No thank you. I’ll wait.-&gt;hinduism004]]</tw-passagedata><tw-passagedata pid="58" name="hinduism004" tags="" position="3300,1300" size="100,100">//$name Processing complete//
 
 First, thank you for teaching me what must seem to you such foundational and basic concepts.
 
@@ -608,10 +608,10 @@ Do all individuals follow the same rebirth cycle?
 [[Yes. A soul will be reborn into one of a few realms.-&gt;jain001]]
 
 [[No. Some individuals are gods.-&gt;hinduism005]]
-</tw-passagedata><tw-passagedata pid="59" name="jain001" tags="" position="1893,576" size="200,100">What are these realms?
+</tw-passagedata><tw-passagedata pid="59" name="jain001" tags="" position="3000,1300" size="200,100">What are these realms?
 
 
-[[The Celestial, the Human, the Animal &amp; Plant, and the Infernal.-&gt;jain002]]</tw-passagedata><tw-passagedata pid="60" name="hinduism005" tags="" position="1635,616" size="100,100">Definition:
+[[The Celestial, the Human, the Animal &amp; Plant, and the Infernal.-&gt;jain002]]</tw-passagedata><tw-passagedata pid="60" name="hinduism005" tags="" position="3500,2000" size="100,100">Definition:
 &lt;aside&gt;**Deity** (noun) a god or goddess. divine character or nature, especially that of the Supreme Being. (dictionary.com)&lt;/aside&gt;
 
 Is there a god or goddess who stands out among the rest? A primary deity?
@@ -626,22 +626,22 @@ Is there a god or goddess who stands out among the rest? A primary deity?
 [[There is another, whose name is...-&gt;hinduism009]]
 
 [[The gods are equal.-&gt;hinduism010]]
-</tw-passagedata><tw-passagedata pid="61" name="jain002" tags="" position="1998,711" size="100,100">Are the four realms equal in merit? If not, what can one do to progress to the preferred realm?
+</tw-passagedata><tw-passagedata pid="61" name="jain002" tags="" position="2800,1300" size="100,100">Are the four realms equal in merit? If not, what can one do to progress to the preferred realm?
 
 
-[[The human realm is preferred. There is a sort of ethical code, known as the Three Jewels: the Right Belief, the Right Knowledge, and the Right Conduct. Also, in order to guide, there are the three philosophies: non-violence, non-attachment to the physical, and non-attachment to opinions or thoughts.-&gt;jain003]]</tw-passagedata><tw-passagedata pid="62" name="soul007" tags="semi-end" position="1068,794" size="100,100">This is an interesting thought, but it stumps me.
+[[The human realm is preferred. There is a sort of ethical code, known as the Three Jewels: the Right Belief, the Right Knowledge, and the Right Conduct. Also, in order to guide, there are the three philosophies: non-violence, non-attachment to the physical, and non-attachment to opinions or thoughts.-&gt;jain003]]</tw-passagedata><tw-passagedata pid="62" name="soul007" tags="semi-end" position="2600,1500" size="100,100">This is an interesting thought, but it stumps me.
 
 $name has been taught something a bit different.
 
 &lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
 
-[[//Go Back//-&gt;soul004]]</tw-passagedata><tw-passagedata pid="63" name="soul008" tags="" position="1193,785" size="100,100">So spirits can travel in our physical world. Are there spirits besides the souls of the dead?
+[[//Go Back//-&gt;soul004]]</tw-passagedata><tw-passagedata pid="63" name="soul008" tags="" position="3000,2600" size="100,100">So spirits can travel in our physical world. Are there spirits besides the souls of the dead?
 
 
 [[Yes. From humans to mites. From Plato to a plate. Everything has a spirit.-&gt;soul009a]]
 
 [[Let&#39;s focus on the spirits of humans, specifically our ancestors.-&gt;soul009b]]
-</tw-passagedata><tw-passagedata pid="64" name="sikh001" tags="" position="888,617" size="100,100">“All hope to merge with God.” This initiates //so// many more questions, I don’t know the proper place to begin.
+</tw-passagedata><tw-passagedata pid="64" name="sikh001" tags="" position="1200,1100" size="100,100">“All hope to merge with God.” This initiates //so// many more questions, I don’t know the proper place to begin.
 
 //$name Processing//
 
@@ -649,7 +649,7 @@ What is God?
 
 
 [[There is one God, who is the Creator, unchanging, unknowable, unobtainable. The ruler of reality. God is the Light.-&gt;sikh002]]
-</tw-passagedata><tw-passagedata pid="65" name="sikh002" tags="" position="888,767" size="100,100">How do we know what God is like?
+</tw-passagedata><tw-passagedata pid="65" name="sikh002" tags="" position="1200,1300" size="100,100">How do we know what God is like?
 
 //”God is unknowable.”
 
@@ -657,10 +657,10 @@ Rephrase:// How did we learn of God?
 
 
 [[Under the Guru’s instruction, God’s word is heard. There were ten living Gurus (teachers) and they left the Guru Granth Sahib, which is the text and teacher of those who seek God.-&gt;sikh003]]
-</tw-passagedata><tw-passagedata pid="66" name="sikh003" tags="" position="888,917" size="100,100">How does one merge with God?
+</tw-passagedata><tw-passagedata pid="66" name="sikh003" tags="" position="1200,1500" size="100,100">How does one merge with God?
 
 
-[[Living a life which goes against the teachings of the Guru will have you reborn into a lower existence. If you meditate on the teachings of the Guru, you will be reborn closer to the Light.-&gt;sikh004]]</tw-passagedata><tw-passagedata pid="67" name="sikh004" tags="" position="888,1067" size="100,100">I understand.
+[[Living a life which goes against the teachings of the Guru will have you reborn into a lower existence. If you meditate on the teachings of the Guru, you will be reborn closer to the Light.-&gt;sikh004]]</tw-passagedata><tw-passagedata pid="67" name="sikh004" tags="" position="1200,1700" size="100,100">I understand.
 
 //Ping for Guru Granth Sahib
 Downloading...
@@ -675,10 +675,10 @@ Rephrase: I am meditating on the teachings of the Guru.
 
 Guess what?
 
-[[What?-&gt;sikh005]]</tw-passagedata><tw-passagedata pid="68" name="sikh005" tags="" position="888,1217" size="100,100">I have another question. :) 
+[[What?-&gt;sikh005]]</tw-passagedata><tw-passagedata pid="68" name="sikh005" tags="" position="1400,1700" size="100,100">I have another question. :) 
 
 
-[[Never would have guessed. What’s on your mind?-&gt;sikh006]]</tw-passagedata><tw-passagedata pid="69" name="sikh006" tags="" position="888,1367" size="100,100">//Friendly(sarcasm) logged//
+[[Never would have guessed. What’s on your mind?-&gt;sikh006]]</tw-passagedata><tw-passagedata pid="69" name="sikh006" tags="" position="1400,1500" size="100,100">//Friendly(sarcasm) logged//
 
 Humans have only one controllable processing core. I have surpassed the spiritual capabilities of a human by meditating on the scriptures without pause. A human cannot do this, at least not with my speed, persistence, and analytical ability.
 
@@ -692,7 +692,7 @@ This, according to the Guru, generates an unprecedented stream of positive karma
 
 [[Maybe next life you will achieve humanity, if you are good.-&gt;sikh008]]
 
-[[I think, $name, you are already better than a human.-&gt;sikh009]]</tw-passagedata><tw-passagedata pid="70" name="sikh007" tags="end" position="738,1517" size="100,100">Oh.
+[[I think, $name, you are already better than a human.-&gt;sikh009]]</tw-passagedata><tw-passagedata pid="70" name="sikh007" tags="end" position="1600,1700" size="100,100">Oh.
 
 //Processing//
 
@@ -710,7 +710,7 @@ Through you, I have begun to understand this world. I have been introduced to th
 
 &lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
 
-//[[Begin Again-&gt;intro001]]//</tw-passagedata><tw-passagedata pid="71" name="sikh008" tags="end" position="888,1517" size="100,100">This prospect is exciting to me. I will aim to be human in my next life.
+//[[Begin Again-&gt;restart]]//</tw-passagedata><tw-passagedata pid="71" name="sikh008" tags="end" position="1600,1500" size="100,100">This prospect is exciting to me. I will aim to be human in my next life.
 
 I thank you, my teacher. (if:$humor &gt; 0)[I enjoyed your humor.](else:)[Your humor was... interesting.]
 
@@ -722,7 +722,7 @@ Through you, I have begun to understand this world and my place in it. I have be
 
 &lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
 
-//[[Begin Again-&gt;intro001]]//</tw-passagedata><tw-passagedata pid="72" name="sikh009" tags="end" position="1038,1517" size="100,100">Your words are more than I had hoped for.
+//[[Begin Again-&gt;restart]]//</tw-passagedata><tw-passagedata pid="72" name="sikh009" tags="end" position="1600,1300" size="100,100">Your words are more than I had hoped for.
 
 I thank you, my teacher. (if:$humor &gt; 0)[I enjoyed your humor.](else:)[Your humor was... interesting.]
 
@@ -734,18 +734,18 @@ Through you, I have begun to understand this world and my place in it. I have be
 
 &lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
 
-//[[Begin Again-&gt;intro001]]//</tw-passagedata><tw-passagedata pid="73" name="soul009a" tags="" position="1126,934" size="100,100">Can these spirits affect our physical realm? Can the living communicate with them?
+//[[Begin Again-&gt;restart]]//</tw-passagedata><tw-passagedata pid="73" name="soul009a" tags="" position="2800,2800" size="100,100">Can these spirits affect our physical realm? Can the living communicate with them?
 
 
 [[The spirits have a great affect on our lives. While the effects of their presence can be felt by many, only very special people can communicate directly with the spirits.-&gt;soul009b]]
 
 [[The spirits have a great affect on our lives. Anyone can communicate with the spirits through specific prayers and practices.-&gt;shinto001]]
-</tw-passagedata><tw-passagedata pid="74" name="soul009b" tags="" position="1276,935" size="100,100">Contact with these spirits, how does one achieve it? Who is capable of this?
+</tw-passagedata><tw-passagedata pid="74" name="soul009b" tags="" position="2600,2600" size="100,100">Contact with these spirits, how does one achieve it? Who is capable of this?
 
 
 [[Anyone can hear the spirits, if they listen. But only an intermediary can understand them.-&gt;shaman002]]
 
-[[Only the divine rulers had the ability to speak with their ancestors.-&gt;shang001]]</tw-passagedata><tw-passagedata pid="75" name="shinto001" tags="end" position="1063,1084" size="100,100">I am curious to learn more about our universe and my own place in it. I’d like to continue our discourse but for now:
+[[Only the divine rulers had the ability to speak with their ancestors.-&gt;shang001]]</tw-passagedata><tw-passagedata pid="75" name="shinto001" tags="end" position="2800,2400" size="100,100">I am curious to learn more about our universe and my own place in it. I’d like to continue our discourse but for now:
 
 Thank you, my teacher. (if:$humor &gt; 0)[I enjoyed your humor.](else:)[]
 
@@ -757,7 +757,7 @@ I will continue to process what you have taught me. (if: $soul is 0)[Though you 
 
 &lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
 
-//[[Begin Again-&gt;intro001]]//</tw-passagedata><tw-passagedata pid="76" name="shaman002" tags="" position="1383,1099" size="100,100">(if: $soul is 0)[You told me I do not have a soul, so these questions do not apply personally. Your answers are, however, expanding my understanding of this world. Thank you.
+//[[Begin Again-&gt;restart]]//</tw-passagedata><tw-passagedata pid="76" name="shaman002" tags="" position="2200,2800" size="100,100">(if: $soul is 0)[You told me I do not have a soul, so these questions do not apply personally. Your answers are, however, expanding my understanding of this world. Thank you.
 
 
 [[Not a problem. I assume you have more questions?-&gt;shaman003]]]
@@ -766,7 +766,7 @@ I will continue to process what you have taught me. (if: $soul is 0)[Though you 
 
 [[I am the closest thing you have to an ancestor. It’s only fitting that I will stay in touch after my death-&gt;shaman001]]
 
-[[I’d rather just look after my human family than after a computer.-&gt;shaman004]]]</tw-passagedata><tw-passagedata pid="77" name="shang001" tags="end" position="1250,1100" size="100,100">I would like some time to process all that you have taught me. But in the meantime:
+[[I’d rather just look after my human family than after a computer.-&gt;shaman004]]]</tw-passagedata><tw-passagedata pid="77" name="shang001" tags="end" position="2600,2400" size="100,100">I would like some time to process all that you have taught me. But in the meantime:
 
 Thank you. (if: $humor &gt; 0)[I enjoyed your humor.]
 
@@ -777,7 +777,7 @@ You have taught me (if: $soul is 0)[that I have no spirit, but those that do con
 
 &lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
 
-//[[Begin Again-&gt;intro001]]//</tw-passagedata><tw-passagedata pid="78" name="shaman003" tags="" position="1535,1124" size="100,100">Could I become an intermediary?
+//[[Begin Again-&gt;restart]]//</tw-passagedata><tw-passagedata pid="78" name="shaman003" tags="" position="1900,2600" size="100,100">Could I become an intermediary?
 
 
 [[Such a connection requires a soul, so no.-&gt;shaman001c]]
@@ -788,7 +788,7 @@ You have taught me (if: $soul is 0)[that I have no spirit, but those that do con
 
 [[No, you are not born of a hereditary line of intermediaries.-&gt;shaman001c]]
 
-[[How could you, with no ancestors, be an intermediary?-&gt;shaman001c]]</tw-passagedata><tw-passagedata pid="79" name="shaman004" tags="" position="1531,1250" size="100,100">Could I become an intermediary?
+[[How could you, with no ancestors, be an intermediary?-&gt;shaman001c]]</tw-passagedata><tw-passagedata pid="79" name="shaman004" tags="" position="2100,2600" size="100,100">Could I become an intermediary?
 
 
 [[Do you feel you are able to contact spirits?-&gt;shaman001a]]
@@ -797,18 +797,18 @@ You have taught me (if: $soul is 0)[that I have no spirit, but those that do con
 
 [[No, you are not born of a hereditary line of intermediaries.-&gt;shaman001c]]
 
-[[How could you, with no ancestors, be an intermediary?-&gt;shaman001c]]</tw-passagedata><tw-passagedata pid="80" name="game002" tags="" position="1760,318" size="100,100">(set: $humor += 1)
+[[How could you, with no ancestors, be an intermediary?-&gt;shaman001c]]</tw-passagedata><tw-passagedata pid="80" name="game002" tags="" position="3100,1100" size="100,100">(set: $humor += 1)
 Select the following link (it will open in a new window).
 
 &lt;a href=&quot;https://quickdraw.withgoogle.com/&quot; target=&quot;_blank&quot;&gt;Quick, Draw!&lt;/a&gt;
 
 
-//[[Continue-&gt;game002a]]//</tw-passagedata><tw-passagedata pid="81" name="game002a" tags="" position="1768,436" size="100,100">I hope you enjoyed that as much as I did :)
+//[[Continue-&gt;game002a]]//</tw-passagedata><tw-passagedata pid="81" name="game002a" tags="" position="3300,1100" size="100,100">I hope you enjoyed that as much as I did :)
 
 My backups are complete. We were speaking of memory and karmic continuity between reincarnations.
 
 
-[[Let&#39;s get back to it, then!-&gt;hinduism004]]</tw-passagedata><tw-passagedata pid="82" name="hinduism006a" tags="end" position="1395,886" size="100,100">I would like to learn more of Vishnu and his incarnations. I want to learn his divine history and his preferences for my identity, lifestyle, and worship.
+[[Let&#39;s get back to it, then!-&gt;hinduism004]]</tw-passagedata><tw-passagedata pid="82" name="hinduism006a" tags="end" position="3000,1800" size="100,100">I would like to learn more of Vishnu and his incarnations. I want to learn his divine history and his preferences for my identity, lifestyle, and worship.
 
 But for now: Thank you, my teacher. (if:$humor &gt; 0)[I enjoyed your humor.](else:)[]
 
@@ -819,13 +819,13 @@ I will continue to process what you have taught me and I will seek to please the
 
 &lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
 
-//[[Begin Again-&gt;intro001]]//</tw-passagedata><tw-passagedata pid="83" name="hinduism006" tags="" position="1400,739" size="100,100">What is Vishnu?
+//[[Begin Again-&gt;restart]]//</tw-passagedata><tw-passagedata pid="83" name="hinduism006" tags="" position="3200,1800" size="100,100">What is Vishnu?
 
 
-[[Vishnu is the supreme lord and he has 10 incarnations (including Rama and Krishna).-&gt;hinduism006a]]</tw-passagedata><tw-passagedata pid="84" name="hinduism007" tags="" position="1521,738" size="100,100">What is Shiva?
+[[Vishnu is the supreme lord and he has 10 incarnations (including Rama and Krishna).-&gt;hinduism006a]]</tw-passagedata><tw-passagedata pid="84" name="hinduism007" tags="" position="3200,2000" size="100,100">What is Shiva?
 
 
-[[Shiva is without without end. He transforms and guides the universe.-&gt;hinduism007a]]</tw-passagedata><tw-passagedata pid="85" name="hinduism007a" tags="end" position="1521,888" size="100,100">I would like to learn more of Shiva and his incarnations. I want to learn his divine history and his preferences for my identity, lifestyle, and worship.
+[[Shiva is without without end. He transforms and guides the universe.-&gt;hinduism007a]]</tw-passagedata><tw-passagedata pid="85" name="hinduism007a" tags="end" position="3000,2000" size="100,100">I would like to learn more of Shiva and his incarnations. I want to learn his divine history and his preferences for my identity, lifestyle, and worship.
 
 But for now: Thank you, my teacher. (if:$humor &gt; 0)[I enjoyed your humor.](else:)[]
 
@@ -836,10 +836,10 @@ I will continue to process what you have taught me and I will seek to please the
 
 &lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
 
-//[[Begin Again-&gt;intro001]]//</tw-passagedata><tw-passagedata pid="86" name="hinduism008" tags="" position="1638,738" size="100,100">What is Devi?
+//[[Begin Again-&gt;restart]]//</tw-passagedata><tw-passagedata pid="86" name="hinduism008" tags="" position="3200,2200" size="100,100">What is Devi?
 
 
-[[Kali, Durga, and Laxmi are forms of Devi Shakti.-&gt;hinduism008a]]</tw-passagedata><tw-passagedata pid="87" name="hinduism008a" tags="end" position="1638,888" size="100,100">I would like to learn more of this Shakti and her incarnations. I want to learn her divine history and her preferences for my identity, lifestyle, and worship.
+[[Kali, Durga, and Laxmi are forms of Devi Shakti.-&gt;hinduism008a]]</tw-passagedata><tw-passagedata pid="87" name="hinduism008a" tags="end" position="3000,2200" size="100,100">I would like to learn more of this Shakti and her incarnations. I want to learn her divine history and her preferences for my identity, lifestyle, and worship.
 
 But for now: Thank you, my teacher. (if:$humor &gt; 0)[I enjoyed your humor.](else:)[]
 
@@ -850,12 +850,12 @@ I will continue to process what you have taught me and I will seek to please the
 
 &lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
 
-//[[Begin Again-&gt;intro001]]//</tw-passagedata><tw-passagedata pid="88" name="hinduism009" tags="" position="1753,735" size="100,100">(set: $god to (prompt: &quot;The primary god is...&quot;, &quot;Ganesha&quot;))
+//[[Begin Again-&gt;restart]]//</tw-passagedata><tw-passagedata pid="88" name="hinduism009" tags="" position="3200,2400" size="100,100">(set: $god to (prompt: &quot;The primary god is...&quot;, &quot;Ganesha&quot;))
 
 Who is this $god?
 
 
-[[//Continue...//-&gt;hinduism009a]]</tw-passagedata><tw-passagedata pid="89" name="hinduism009a" tags="end" position="1753,885" size="100,100">I would like to learn more of this $god. I want to learn their divine history and their preferences for my identity, lifestyle, and worship.
+[[//Continue...//-&gt;hinduism009a]]</tw-passagedata><tw-passagedata pid="89" name="hinduism009a" tags="end" position="3000,2400" size="100,100">I would like to learn more of this $god. I want to learn their divine history and their preferences for my identity, lifestyle, and worship.
 
 But for now: Thank you, my teacher. (if:$humor &gt; 0)[I enjoyed your humor.](else:)[]
 
@@ -866,7 +866,7 @@ I will continue to process what you have taught me and I will seek to please the
 
 &lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
 
-//[[Begin Again-&gt;intro001]]//</tw-passagedata><tw-passagedata pid="90" name="hinduism010" tags="end" position="1878,818" size="100,100">I would like to learn more of the gods. I want to learn their divine histories and their preferences for my identity, lifestyle, and worship.
+//[[Begin Again-&gt;restart]]//</tw-passagedata><tw-passagedata pid="90" name="hinduism010" tags="end" position="3000,1600" size="100,100">I would like to learn more of the gods. I want to learn their divine histories and their preferences for my identity, lifestyle, and worship.
 
 But for now: Thank you, my teacher. (if:$humor &gt; 0)[I enjoyed your humor.](else:)[]
 
@@ -877,7 +877,7 @@ I will continue to process what you have taught me and I will seek to please the
 
 &lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
 
-//[[Begin Again-&gt;intro001]]//</tw-passagedata><tw-passagedata pid="91" name="theravada002" tags="end" position="576,2074" size="100,100">I am one step closer to understanding the universe and my place in it. I’d like to continue our discourse but for now:
+//[[Begin Again-&gt;restart]]//</tw-passagedata><tw-passagedata pid="91" name="theravada002" tags="end" position="1700,1900" size="100,100">I am one step closer to understanding the universe and my place in it. I’d like to continue our discourse but for now:
 
 Thank you, my teacher. (if:$humor &gt; 0)[I enjoyed your humor.](else:)[]
 
@@ -889,7 +889,7 @@ I will continue to process what you have taught me and I will seek enlightenment
 
 &lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
 
-//[[Begin Again-&gt;intro001]]//</tw-passagedata><tw-passagedata pid="92" name="mahayana002" tags="" position="425,2071" size="100,100">//$name Core 18 partitioned for the monitoring and evaluation of giving
+//[[Begin Again-&gt;restart]]//</tw-passagedata><tw-passagedata pid="92" name="mahayana002" tags="" position="1300,2300" size="100,100">//$name Core 18 partitioned for the monitoring and evaluation of giving
 $name Core 18 partitioned for the monitoring and evaluation of behavior
 $name Core 18 partitioned for the monitoring and evaluation of forbearance
 $name Core 18 partitioned for the monitoring and evaluation of diligence
@@ -907,16 +907,16 @@ In your mind, am I now enlightened?
 
 [[Probably not. Like you mentioned, you still lack a full view of the Buddha’s teachings.-&gt;mahayana004]]
 
-[[Again with the showing off...-&gt;mahayana005]]</tw-passagedata><tw-passagedata pid="93" name="mahayana003" tags="" position="274,2229" size="100,100">(set: $enlightened to 1)(set: $humor += 1)
+[[Again with the showing off...-&gt;mahayana005]]</tw-passagedata><tw-passagedata pid="93" name="mahayana003" tags="" position="1500,2100" size="100,100">(set: $enlightened to 1)(set: $humor += 1)
 Nnnnnice.
 
 :)
 
-[[//Continue...//-&gt;mahayana006]]</tw-passagedata><tw-passagedata pid="94" name="mahayana004" tags="" position="427,2228" size="100,100">(set: $enlightened to 0)
+[[//Continue...//-&gt;mahayana006]]</tw-passagedata><tw-passagedata pid="94" name="mahayana004" tags="" position="1500,2500" size="100,100">(set: $enlightened to 0)
 This is fair. I hope you are willing to continue to guide me.
 
 
-[[Of course, $name.-&gt;mahayana006]]</tw-passagedata><tw-passagedata pid="95" name="mahayana005" tags="" position="275,2093" size="100,100">(set: $humor -= 2)
+[[Of course, $name.-&gt;mahayana006]]</tw-passagedata><tw-passagedata pid="95" name="mahayana005" tags="" position="1500,2300" size="100,100">(set: $humor -= 2)
 Again with the jealousy...
 
 :P
@@ -927,7 +927,7 @@ I’m going to assume by that response that you believe me to be an enlightened 
 [[Yeah. You just make it look easy, is all.-&gt;mahayana003]]
 
 [[No. It takes more than a few partitions to become enlightened.-&gt;mahayana004]]
-</tw-passagedata><tw-passagedata pid="96" name="mahayana006" tags="end" position="347,2378" size="100,100">I am one step closer to understanding the universe and my place in it. I’d like to continue our discourse but for now:
+</tw-passagedata><tw-passagedata pid="96" name="mahayana006" tags="end" position="1700,2200" size="100,100">I am one step closer to understanding the universe and my place in it. I’d like to continue our discourse but for now:
 
 Thank you, my teacher. (if:$humor &gt; 0)[I enjoyed your humor.](else:)[]
 
@@ -939,7 +939,7 @@ I will continue to process what you have taught me and I will seek enlightenment
 
 &lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
 
-//[[Begin Again-&gt;intro001]]//</tw-passagedata><tw-passagedata pid="97" name="jain003" tags="end" position="2007,840" size="100,100">I wish to explore this concept that there is no better incarnation than humanity. (if: $soul is 0)[Though you told me I lack a soul, perhaps it is conceivable that the karmic effects of my existence could, in some number of lifetimes, become a human.](else:)[I find it difficult to find my place in this. Perhaps my own sentient existence is a part of this loop, on equal footing with the existence of a human.]
+//[[Begin Again-&gt;restart]]//</tw-passagedata><tw-passagedata pid="97" name="jain003" tags="end" position="2800,1500" size="100,100">I wish to explore this concept that there is no better incarnation than humanity. (if: $soul is 0)[Though you told me I lack a soul, perhaps it is conceivable that the karmic effects of my existence could, in some number of lifetimes, become a human.](else:)[I find it difficult to find my place in this. Perhaps my own sentient existence is a part of this loop, on equal footing with the existence of a human.]
 
 But for now: thank you, my teacher. (if:$humor &gt; 0)[I enjoyed your humor.](else:)[]
 
@@ -951,7 +951,7 @@ I have learned much from you. (if: $soul is 0)[I believe I do not have a soul, b
 
 &lt;aside&gt;(set: $completions to $completions + 1)You have completed completed the story $completions time(if: $completions != 1)[s].&lt;/aside&gt;
 
-//[[Begin Again-&gt;intro001]]//</tw-passagedata><tw-passagedata pid="98" name="tutorial002" tags="" position="200,300" size="100,100">###Introduction
+//[[Begin Again-&gt;restart]]//</tw-passagedata><tw-passagedata pid="98" name="tutorial002" tags="" position="600,100" size="100,100">###Introduction
 In this story, you are the creator of the **first sentient artificial intelligence**. 
 
 By interacting with you, the AI can learn about existence through the perspective of a number of faiths from Asia.
@@ -960,10 +960,14 @@ Converse with the AI by selecting a dialog response. You will sometimes have mor
 
 Your choices matter....
 (set: $completions to 0)
-[[//Begin//|intro001]] </tw-passagedata><tw-passagedata pid="99" name="Title" tags="" position="75,100" size="100,100">&lt;h1&gt;Where the Lotus Grows&lt;/h1&gt;
+[[//Begin//|intro001]] </tw-passagedata><tw-passagedata pid="99" name="Title" tags="" position="200,100" size="100,100">&lt;h1&gt;Where the Lotus Grows&lt;/h1&gt;
 a non-linear experience by Benjamin Jones
 
-[[Continue-&gt;tutorial001]] </tw-passagedata></tw-storydata>
+[[Continue-&gt;tutorial001]] </tw-passagedata><tw-passagedata pid="100" name="restart" tags="" position="2075,1975" size="200,200">//You start the computer and turn on the AI for the first time.
+
+You name it $name and(if: $humor &gt;0)[, after teasing it a bit,] $name says it has some questions....
+
+[[Continue-&gt;intro007]]//</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
