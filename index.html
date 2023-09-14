@@ -77,12 +77,14 @@ aside{
   padding-left: 10px;
   margin-left: 10px;
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1000px){
   tw-story{
     padding: 15px;
+    font-size: calc(20px + 2vw);
   }
   tw-link, a{
     transform:scale(1) translate(0);
+    font-size: calc(20px + 2vw);
   }
   tw-link:hover, a:hover{
     transform:scale(1.02) translate(0);
@@ -92,8 +94,12 @@ aside{
   animation: glitch 1s ease-out infinite;
 }
 @keyframes flicker{
-  0%,15%,31%,69%,82%,84%,98%{box-shadow: 0vh 0px 50vw inset black;}
-  24%,83%,85%,100%{box-shadow: -10vh 0px 80vw inset black;}
+  0%,15%,31%,69%,82%,84%,98%{
+  	box-shadow: 0 0vh 50vw inset black;
+  }
+  24%,83%,85%,100%{
+  	box-shadow: 0 -10vh 80vw inset black;
+  }
 }
 @keyframes glitch{
   0%,23%,31%,69%,82%,84%,98%{color:white; transform:skew(0deg);}
